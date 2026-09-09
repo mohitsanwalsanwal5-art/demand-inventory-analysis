@@ -58,6 +58,18 @@ def load_all_data() -> Tuple[pd.DataFrame, pd.DataFrame, pd.DataFrame, pd.DataFr
     hist_df = pd.read_csv(hist_path)
     grid_df = pd.read_csv(grid_path) if grid_path.exists() else pd.DataFrame()
 
+    # Defensive attribute enrichment from sku_master (without column collisions)
+    sku_master_path = BASE_DIR / "data" / "raw" / "sku_master.csv"
+    if sku_master_path.exists():
+        sku_master = pd.read_csv(sku_master_path)
+        missing_in_risk = [c for c in ["Product_Name", "Category", "Cost_Price"] if c not in risk_df.columns and c in sku_master.columns]
+        if missing_in_risk:
+            risk_df = risk_df.merge(sku_master[["SKU"] + missing_in_risk], on="SKU", how="left")
+    elif not grid_df.empty:
+        missing_in_risk = [c for c in ["Product_Name", "Category", "Cost_Price"] if c not in risk_df.columns and c in grid_df.columns]
+        if missing_in_risk:
+            risk_df = risk_df.merge(grid_df[["SKU"] + missing_in_risk].drop_duplicates(subset=["SKU"]), on="SKU", how="left")
+
     summary_meta = {}
     if summary_path.exists():
         with open(summary_path, "r", encoding="utf-8") as f:
@@ -352,58 +364,96 @@ with tab_stockout:
     st.markdown("##### SKUs Facing Buffer Breach During Supplier Lead Time (Ranked by Revenue at Risk)")
     st.caption("Immediate purchase order review required: Available inventory fails to cover expected lead-time demand + safety stock.")
 
-    so_df = filtered_risk[filtered_risk["stockout_flag"] == 1].sort_values(by="revenue_at_risk", ascending=False)
+    so_df = filtered_risk[filtered_risk["stockout_flag"] == 1].sort_values(by="revenue_at_risk", ascending=False).copy()
+
+    # Defensive check: ensure Product_Name and Category exist if missing
+    for col in ["Product_Name", "Category"]:
+        if col not in so_df.columns:
+            sku_master_path = BASE_DIR / "data" / "raw" / "sku_master.csv"
+            if sku_master_path.exists():
+                sku_master = pd.read_csv(sku_master_path)
+                if col in sku_master.columns:
+                    so_df = so_df.merge(sku_master[["SKU", col]], on="SKU", how="left")
 
     if len(so_df) == 0:
         st.success("✅ No stockout-risk SKUs in the current filtered view.")
     else:
-        display_so = so_df[[
+        required_so_cols = [
             "SKU", "Product_Name", "Category", "Current_Stock", "On_Order", "available_units",
             "Lead_Time_Days", "lead_time_demand", "Safety_Stock", "required_inventory_buffer",
             "buffer_gap_units", "revenue_at_risk", "recommended_action"
-        ]].copy()
-
-        display_so.columns = [
-            "SKU", "Product", "Category", "Current Stock", "On Order", "Available Units",
-            "Lead Time (Days)", "Lead-Time Demand", "Safety Stock", "Required Buffer",
-            "Buffer Deficit", "Revenue at Risk (₹)", "Recommended Action"
         ]
+        missing_so_cols = [col for col in required_so_cols if col not in so_df.columns]
 
-        display_so["Revenue at Risk (₹)"] = display_so["Revenue at Risk (₹)"].apply(lambda x: f"₹{x:,.2f}")
-        st.dataframe(display_so, use_container_width=True, hide_index=True)
+        if missing_so_cols:
+            st.error(f"⚠️ Reorder Priority table display error: Missing required column(s): {', '.join(missing_so_cols)}")
+        else:
+            display_so = so_df[required_so_cols].copy()
+
+            display_so.columns = [
+                "SKU", "Product", "Category", "Current Stock", "On Order", "Available Units",
+                "Lead Time (Days)", "Lead-Time Demand", "Safety Stock", "Required Buffer",
+                "Buffer Deficit", "Revenue at Risk (₹)", "Recommended Action"
+            ]
+
+            display_so["Revenue at Risk (₹)"] = display_so["Revenue at Risk (₹)"].apply(lambda x: f"₹{x:,.2f}" if pd.notnull(x) else "—")
+            st.dataframe(display_so, use_container_width=True, hide_index=True)
 
 with tab_overstock:
     st.markdown("##### SKUs Holding Inventory Beyond 4-Week Forward Demand (Ranked by Capital Tied Up)")
     st.caption("Clearance / markdown review recommended: Holding excess inventory locks working capital and increases storage expense.")
 
-    os_df = filtered_risk[filtered_risk["overstock_flag"] == 1].sort_values(by="inventory_value_tied_up", ascending=False)
+    os_df = filtered_risk[filtered_risk["overstock_flag"] == 1].sort_values(by="inventory_value_tied_up", ascending=False).copy()
+
+    # Defensive check: ensure Product_Name, Category, Cost_Price exist in os_df
+    for col in ["Product_Name", "Category", "Cost_Price"]:
+        if col not in os_df.columns:
+            sku_master_path = BASE_DIR / "data" / "raw" / "sku_master.csv"
+            if sku_master_path.exists():
+                sku_master = pd.read_csv(sku_master_path)
+                if col in sku_master.columns:
+                    os_df = os_df.merge(sku_master[["SKU", col]], on="SKU", how="left")
+            elif not grid_df.empty and col in grid_df.columns:
+                os_df = os_df.merge(grid_df[["SKU", col]].drop_duplicates(subset=["SKU"]), on="SKU", how="left")
 
     if len(os_df) == 0:
         st.success("✅ No overstock-risk SKUs in the current filtered view.")
     else:
-        display_os = os_df[[
+        required_os_cols = [
             "SKU", "Product_Name", "Category", "Current_Stock", "forward_demand_units",
             "excess_units", "Cost_Price", "inventory_value_tied_up", "recommended_action"
-        ]].copy()
-
-        display_os.columns = [
-            "SKU", "Product", "Category", "Current Stock", "4-Wk Forecast",
-            "Excess Units", "Cost Price (₹)", "Capital Tied Up (₹)", "Recommended Action"
         ]
+        missing = [c for c in required_os_cols if c not in os_df.columns]
 
-        display_os["Cost Price (₹)"] = display_os["Cost Price (₹)"].apply(lambda x: f"₹{x:,.2f}")
-        display_os["Capital Tied Up (₹)"] = display_os["Capital Tied Up (₹)"].apply(lambda x: f"₹{x:,.2f}")
-        st.dataframe(display_os, use_container_width=True, hide_index=True)
+        if missing:
+            st.error(f"Overstock table data is missing columns: {missing}")
+        else:
+            display_os = os_df[required_os_cols].copy()
+
+            display_os.columns = [
+                "SKU", "Product", "Category", "Current Stock", "4-Wk Forecast",
+                "Excess Units", "Cost Price (₹)", "Capital Tied Up (₹)", "Recommended Action"
+            ]
+
+            display_os["Cost Price (₹)"] = display_os["Cost Price (₹)"].apply(lambda x: f"₹{x:,.2f}" if pd.notnull(x) else "—")
+            display_os["Capital Tied Up (₹)"] = display_os["Capital Tied Up (₹)"].apply(lambda x: f"₹{x:,.2f}" if pd.notnull(x) else "—")
+            st.dataframe(display_os, use_container_width=True, hide_index=True)
 
 with tab_all:
     st.markdown("##### Full Filtered Active Inventory Roster")
-    display_all = filtered_risk[[
+    required_all_cols = [
         "SKU", "Product_Name", "Category", "Current_Stock", "On_Order", "Lead_Time_Days",
         "stockout_score", "stockout_flag", "overstock_score", "overstock_flag",
         "decision_quadrant", "value_at_stake", "recommended_action"
-    ]].copy()
-    display_all["value_at_stake"] = display_all["value_at_stake"].apply(lambda x: f"₹{x:,.2f}")
-    st.dataframe(display_all, use_container_width=True, hide_index=True)
+    ]
+    missing_all_cols = [col for col in required_all_cols if col not in filtered_risk.columns]
+
+    if missing_all_cols:
+        st.error(f"⚠️ Active Catalog table display error: Missing required column(s): {', '.join(missing_all_cols)}")
+    else:
+        display_all = filtered_risk[required_all_cols].copy()
+        display_all["value_at_stake"] = display_all["value_at_stake"].apply(lambda x: f"₹{x:,.2f}" if pd.notnull(x) else "—")
+        st.dataframe(display_all, use_container_width=True, hide_index=True)
 
 # =====================================================================
 # SECTION 5, 6, 7: SKU DETAIL, 8-WEEK FORECAST & BUSINESS EXPLANATION
