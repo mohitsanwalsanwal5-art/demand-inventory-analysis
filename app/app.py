@@ -479,8 +479,9 @@ else:
 # SECTION 5: Plotly Forecast vs Actuals Chart
 st.markdown("##### 📈 Historical Demand Trend & 8-Week Forward Forecast with Prediction Intervals")
 
-# Prepare historical view (last 52 weeks for visual clarity)
-recent_hist = sku_hist_records.tail(52).copy()
+# Prepare historical view (last 52 complete weeks prior to forecast origin)
+forecast_origin_date = sku_fc_records["Forecast_Week"].min()
+recent_hist = sku_hist_records[sku_hist_records["Week_Start"] < forecast_origin_date].tail(52).copy()
 
 fig_fc = go.Figure()
 
@@ -517,20 +518,19 @@ fig_fc.add_trace(go.Scatter(
     hovertemplate="<b>Forward ML Forecast</b><br>Week: %{x|%Y-%m-%d}<br>Expected Units: %{y:.1f}<extra></extra>"
 ))
 
-# 4. Vertical dividing line between History and Forward Forecast
-last_hist_date = recent_hist["Week_Start"].max()
+# 4. Vertical dividing line at exact Forecast Origin boundary (2025-12-29)
 fig_fc.add_shape(
     type="line",
-    x0=last_hist_date,
+    x0=forecast_origin_date,
     y0=0,
-    x1=last_hist_date,
+    x1=forecast_origin_date,
     y1=max(recent_hist["Weekly_Units"].max(), sku_fc_records["Interval_P90"].max()) * 1.15,
     line=dict(color="#F59E0B", width=2, dash="dash")
 )
 fig_fc.add_annotation(
-    x=last_hist_date,
+    x=forecast_origin_date,
     y=max(recent_hist["Weekly_Units"].max(), sku_fc_records["Interval_P90"].max()) * 1.08,
-    text="<b>Forecast Origin (2025-12-01)</b>",
+    text=f"<b>Forecast Origin ({forecast_origin_date.strftime('%Y-%m-%d')})</b>",
     showarrow=True,
     arrowhead=2,
     arrowcolor="#F59E0B",
