@@ -1,0 +1,248 @@
+{
+  "pipeline_execution_timestamp": "2026-09-09T15:14:03.437121",
+  "raw_extracts": {
+    "sales_daily": {
+      "row_count": 36550,
+      "column_count": 6,
+      "columns": [
+        "Date",
+        "SKU",
+        "Units_Sold",
+        "Revenue",
+        "Price",
+        "Promotion"
+      ],
+      "null_counts": {
+        "Date": 0,
+        "SKU": 0,
+        "Units_Sold": 0,
+        "Revenue": 0,
+        "Price": 0,
+        "Promotion": 0
+      },
+      "duplicate_rows": 0
+    },
+    "sku_master": {
+      "row_count": 50,
+      "column_count": 8,
+      "columns": [
+        "SKU",
+        "Product_Name",
+        "Category",
+        "Subcategory",
+        "Launch_Date",
+        "Cost_Price",
+        "Selling_Price",
+        "Gross_Margin_Per_Unit"
+      ],
+      "null_counts": {
+        "SKU": 0,
+        "Product_Name": 0,
+        "Category": 0,
+        "Subcategory": 0,
+        "Launch_Date": 0,
+        "Cost_Price": 0,
+        "Selling_Price": 0,
+        "Gross_Margin_Per_Unit": 0
+      },
+      "duplicate_rows": 0
+    },
+    "calendar": {
+      "row_count": 731,
+      "column_count": 11,
+      "columns": [
+        "date",
+        "year",
+        "month",
+        "quarter",
+        "week",
+        "day_of_week",
+        "is_weekend",
+        "season",
+        "holiday",
+        "is_holiday",
+        "promotion_event"
+      ],
+      "null_counts": {
+        "date": 0,
+        "year": 0,
+        "month": 0,
+        "quarter": 0,
+        "week": 0,
+        "day_of_week": 0,
+        "is_weekend": 0,
+        "season": 0,
+        "holiday": 723,
+        "is_holiday": 0,
+        "promotion_event": 656
+      },
+      "duplicate_rows": 0
+    },
+    "inventory_snapshots": {
+      "row_count": 4800,
+      "column_count": 8,
+      "columns": [
+        "Snapshot_Date",
+        "SKU",
+        "Current_Stock",
+        "On_Order",
+        "Lead_Time_Days",
+        "Safety_Stock",
+        "Reorder_Point",
+        "Inventory_Value"
+      ],
+      "null_counts": {
+        "Snapshot_Date": 0,
+        "SKU": 0,
+        "Current_Stock": 0,
+        "On_Order": 0,
+        "Lead_Time_Days": 0,
+        "Safety_Stock": 0,
+        "Reorder_Point": 0,
+        "Inventory_Value": 0
+      },
+      "duplicate_rows": 0
+    }
+  },
+  "cleaning_decisions": [
+    {
+      "table": "sku_master",
+      "action": "margin_audit",
+      "negative_margin_count": 16,
+      "negative_margin_skus": [
+        "SKU002",
+        "SKU007",
+        "SKU009",
+        "SKU010",
+        "SKU011",
+        "SKU016",
+        "SKU018",
+        "SKU020",
+        "SKU023",
+        "SKU024",
+        "SKU028",
+        "SKU033",
+        "SKU037",
+        "SKU038",
+        "SKU040",
+        "SKU048"
+      ],
+      "rationale": "Flagged 16 SKUs selling below unit cost for operational pricing review."
+    }
+  ],
+  "sku_reconciliation": {
+    "total_inventory_skus": 200,
+    "active_sales_skus_count": 50,
+    "warehouse_only_skus_count": 150,
+    "active_sales_skus": [
+      "SKU001",
+      "SKU002",
+      "SKU003",
+      "SKU004",
+      "SKU005",
+      "SKU006",
+      "SKU007",
+      "SKU008",
+      "SKU009",
+      "SKU010",
+      "SKU011",
+      "SKU012",
+      "SKU013",
+      "SKU014",
+      "SKU015",
+      "SKU016",
+      "SKU017",
+      "SKU018",
+      "SKU019",
+      "SKU020",
+      "SKU021",
+      "SKU022",
+      "SKU023",
+      "SKU024",
+      "SKU025",
+      "SKU026",
+      "SKU027",
+      "SKU028",
+      "SKU029",
+      "SKU030",
+      "SKU031",
+      "SKU032",
+      "SKU033",
+      "SKU034",
+      "SKU035",
+      "SKU036",
+      "SKU037",
+      "SKU038",
+      "SKU039",
+      "SKU040",
+      "SKU041",
+      "SKU042",
+      "SKU043",
+      "SKU044",
+      "SKU045",
+      "SKU046",
+      "SKU047",
+      "SKU048",
+      "SKU049",
+      "SKU050"
+    ],
+    "warehouse_only_skus_sample": [
+      "SKU051",
+      "SKU052",
+      "SKU053",
+      "SKU054",
+      "SKU055",
+      "SKU056",
+      "SKU057",
+      "SKU058",
+      "SKU059",
+      "SKU060"
+    ],
+    "rationale": "50 SKUs have historical sales and full master metadata for demand forecasting. 150 SKUs exist exclusively in warehouse snapshots (unlaunched / inactive). All 200 are preserved in the reconciled inventory dataset to avoid silent data loss."
+  },
+  "validation_checks": {
+    "weekly_demand_row_count": 5250,
+    "weekly_demand_expected_rows": 5250,
+    "weekly_demand_row_check_passed": true,
+    "weekly_demand_unique_skus": 50,
+    "weekly_demand_expected_skus": 50,
+    "weekly_demand_unique_weeks": 105,
+    "weekly_demand_expected_weeks": 105,
+    "weekly_demand_null_count": 0,
+    "reconciled_inventory_rows": 4800,
+    "reconciled_inventory_expected_rows": 4800,
+    "reconciled_inventory_unique_skus": 200,
+    "reconciled_inventory_expected_skus": 200,
+    "latest_inventory_skus": 200,
+    "latest_inventory_expected_skus": 200,
+    "latest_inventory_total_value": 240268727.9,
+    "latest_inventory_active_value": 65394109.54,
+    "latest_inventory_inactive_value": 174874618.36
+  },
+  "processed_datasets": {
+    "weekly_demand_analysis_ready": {
+      "file": "weekly_demand_analysis_ready.csv",
+      "rows": 5250,
+      "columns": 20,
+      "date_range": [
+        "2024-01-01",
+        "2025-12-29"
+      ]
+    },
+    "reconciled_inventory_snapshots": {
+      "file": "reconciled_inventory_snapshots.csv",
+      "rows": 4800,
+      "columns": 18,
+      "date_range": [
+        "2024-01-01",
+        "2025-12-01"
+      ]
+    },
+    "latest_inventory_status": {
+      "file": "latest_inventory_status.csv",
+      "rows": 200,
+      "columns": 18,
+      "snapshot_date": "2025-12-01"
+    }
+  }
+}

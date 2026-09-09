@@ -1,0 +1,201 @@
+Snapshot_Date,SKU,Current_Stock,On_Order,Lead_Time_Days,Safety_Stock,Reorder_Point,Inventory_Value,is_active_sales_sku,Product_Status,Product_Name,Category,Subcategory,Launch_Date,Cost_Price,Selling_Price,Gross_Margin_Per_Unit,Negative_Margin_Flag
+2025-12-01,SKU001,771,147,4,159,289,2815160.01,True,Active Commercial,Product 001,Furniture,Chair,2022-04-09,1758.45,3664.05,1905.6,0.0
+2025-12-01,SKU002,526,29,3,94,149,2974319.6,True,Active Commercial,Product 002,Home Decor,Table,2024-05-01,3867.09,3805.69,-61.4,1.0
+2025-12-01,SKU003,349,12,3,88,123,2145941.67,True,Active Commercial,Product 003,Kitchen,Cushion,2023-12-22,589.48,8078.23,7488.75,0.0
+2025-12-01,SKU004,259,254,6,98,196,321905.92,True,Active Commercial,Product 004,Lighting,Cookware,2023-04-28,1445.74,6861.57,5415.83,0.0
+2025-12-01,SKU005,471,291,6,129,245,3500674.53,True,Active Commercial,Product 005,Storage,Lamp,2023-04-22,5543.63,9493.22,3949.59,0.0
+2025-12-01,SKU006,359,485,13,129,340,2378877.6,True,Active Commercial,Product 006,Furniture,Shelf,2024-08-02,6021.91,8106.04,2084.13,0.0
+2025-12-01,SKU007,207,460,8,98,237,941442.21,True,Active Commercial,Product 007,Home Decor,Cabinet,2022-04-05,7748.2,5114.09,-2634.11,1.0
+2025-12-01,SKU008,325,155,3,91,161,2165845.5,True,Active Commercial,Product 008,Kitchen,Rug,2024-02-07,2775.15,9842.64,7067.49,0.0
+2025-12-01,SKU009,75,89,7,63,131,224818.5,True,Active Commercial,Product 009,Lighting,Organizer,2022-08-10,3121.06,2336.89,-784.17,1.0
+2025-12-01,SKU010,83,70,13,22,60,595250.27,True,Active Commercial,Product 010,Storage,Sofa,2022-04-14,3889.06,663.46,-3225.6,1.0
+2025-12-01,SKU011,753,269,3,179,247,2911918.77,True,Active Commercial,Product 011,Furniture,Chair,2023-08-03,1718.4,1444.56,-273.84,1.0
+2025-12-01,SKU012,47,60,12,16,58,67949.78,True,Active Commercial,Product 012,Home Decor,Table,2024-12-09,1256.89,8779.37,7522.48,0.0
+2025-12-01,SKU013,151,95,4,32,61,1169978.2,True,Active Commercial,Product 013,Kitchen,Cushion,2024-03-20,3936.71,5757.78,1821.07,0.0
+2025-12-01,SKU014,309,334,10,130,299,964407.54,True,Active Commercial,Product 014,Lighting,Cookware,2024-04-17,2008.55,2270.75,262.2,0.0
+2025-12-01,SKU015,187,245,9,119,265,235038.43,True,Active Commercial,Product 015,Storage,Lamp,2024-02-29,5441.06,6212.12,771.06,0.0
+2025-12-01,SKU016,255,187,11,30,129,512180.25,True,Active Commercial,Product 016,Furniture,Shelf,2024-05-14,3637.93,2166.82,-1471.11,1.0
+2025-12-01,SKU017,95,26,12,108,274,636809.7,True,Active Commercial,Product 017,Home Decor,Cabinet,2023-07-19,6703.26,8477.32,1774.06,0.0
+2025-12-01,SKU018,235,102,8,66,184,627647.4,True,Active Commercial,Product 018,Kitchen,Rug,2022-05-21,5677.05,5575.41,-101.64,1.0
+2025-12-01,SKU019,227,114,14,25,126,738421.92,True,Active Commercial,Product 019,Lighting,Organizer,2024-07-12,2670.84,4819.85,2149.01,0.0
+2025-12-01,SKU020,1002,353,3,129,227,5550418.68,True,Active Commercial,Product 020,Storage,Sofa,2023-05-11,6700.01,3897.54,-2802.47,1.0
+2025-12-01,SKU021,88,97,9,36,88,27021.28,True,Active Commercial,Product 021,Furniture,Chair,2023-07-05,6486.92,7711.28,1224.36,0.0
+2025-12-01,SKU022,95,194,8,76,163,513246.05,True,Active Commercial,Product 022,Home Decor,Table,2023-02-12,3252.96,4597.03,1344.07,0.0
+2025-12-01,SKU023,130,79,12,41,148,494858.0,True,Active Commercial,Product 023,Kitchen,Cushion,2022-07-20,2484.54,1416.74,-1067.8,1.0
+2025-12-01,SKU024,341,18,14,60,259,454699.63,True,Active Commercial,Product 024,Lighting,Cookware,2024-10-16,5539.34,1768.87,-3770.47,1.0
+2025-12-01,SKU025,1124,61,14,121,582,4384724.0,True,Active Commercial,Product 025,Storage,Lamp,2024-05-09,1333.08,11558.01,10224.93,0.0
+2025-12-01,SKU026,160,70,5,31,59,988598.4,True,Active Commercial,Product 026,Furniture,Shelf,2023-12-10,1799.29,10939.54,9140.25,0.0
+2025-12-01,SKU027,567,103,3,83,133,2599048.62,True,Active Commercial,Product 027,Home Decor,Cabinet,2023-03-19,307.06,8516.6,8209.54,0.0
+2025-12-01,SKU028,174,55,11,114,337,85058.16,True,Active Commercial,Product 028,Kitchen,Rug,2024-06-24,6348.66,3484.09,-2864.57,1.0
+2025-12-01,SKU029,261,520,5,196,329,891602.1,True,Active Commercial,Product 029,Lighting,Organizer,2023-08-23,5402.59,11642.45,6239.86,0.0
+2025-12-01,SKU030,166,32,9,43,104,342462.98,True,Active Commercial,Product 030,Storage,Sofa,2023-05-03,5715.03,9433.51,3718.48,0.0
+2025-12-01,SKU031,93,40,13,28,113,234857.55,True,Active Commercial,Product 031,Furniture,Chair,2023-05-11,6300.65,8715.93,2415.28,0.0
+2025-12-01,SKU032,278,214,11,60,185,1269626.0,True,Active Commercial,Product 032,Home Decor,Table,2022-09-07,3806.6,5612.59,1805.99,0.0
+2025-12-01,SKU033,208,168,12,55,183,707096.0,True,Active Commercial,Product 033,Kitchen,Cushion,2022-04-12,4657.74,3558.0,-1099.74,1.0
+2025-12-01,SKU034,34,103,5,34,58,52497.36,True,Active Commercial,Product 034,Lighting,Cookware,2023-09-03,1333.43,1518.14,184.71,0.0
+2025-12-01,SKU035,670,76,8,137,304,3918347.6,True,Active Commercial,Product 035,Storage,Lamp,2024-09-03,1137.61,10870.19,9732.58,0.0
+2025-12-01,SKU036,383,135,3,77,129,574446.38,True,Active Commercial,Product 036,Furniture,Shelf,2022-03-12,5430.12,5687.0,256.88,0.0
+2025-12-01,SKU037,355,687,8,315,644,2004500.4,True,Active Commercial,Product 037,Home Decor,Cabinet,2024-08-02,3901.0,2747.42,-1153.58,1.0
+2025-12-01,SKU038,159,310,12,56,175,509262.69,True,Active Commercial,Product 038,Kitchen,Rug,2024-06-29,4630.58,3949.1,-681.48,1.0
+2025-12-01,SKU039,93,35,3,17,31,284026.65,True,Active Commercial,Product 039,Lighting,Organizer,2022-11-01,6178.74,7118.95,940.21,0.0
+2025-12-01,SKU040,67,29,9,36,93,78024.85,True,Active Commercial,Product 040,Storage,Sofa,2023-11-26,5169.07,2450.56,-2718.51,1.0
+2025-12-01,SKU041,440,40,4,78,139,2496001.2,True,Active Commercial,Product 041,Furniture,Chair,2022-07-01,4540.24,10336.73,5796.49,0.0
+2025-12-01,SKU042,90,120,6,41,88,698500.8,True,Active Commercial,Product 042,Home Decor,Table,2024-04-13,4583.86,9198.83,4614.97,0.0
+2025-12-01,SKU043,559,211,12,142,393,2086495.45,True,Active Commercial,Product 043,Kitchen,Cushion,2024-02-10,2605.61,8745.77,6140.16,0.0
+2025-12-01,SKU044,223,39,5,55,93,222337.69,True,Active Commercial,Product 044,Lighting,Cookware,2023-01-25,488.84,5412.28,4923.44,0.0
+2025-12-01,SKU045,307,142,4,88,142,558224.24,True,Active Commercial,Product 045,Storage,Lamp,2022-03-16,3634.56,7676.78,4042.22,0.0
+2025-12-01,SKU046,119,182,4,46,96,563935.05,True,Active Commercial,Product 046,Furniture,Shelf,2024-12-03,1913.03,7175.54,5262.51,0.0
+2025-12-01,SKU047,201,129,9,44,99,1231834.53,True,Active Commercial,Product 047,Home Decor,Cabinet,2023-05-06,3416.1,7938.22,4522.12,0.0
+2025-12-01,SKU048,106,50,3,22,31,381464.32,True,Active Commercial,Product 048,Kitchen,Rug,2024-09-09,6863.87,1379.55,-5484.32,1.0
+2025-12-01,SKU049,780,599,5,206,344,4123321.8,True,Active Commercial,Product 049,Lighting,Organizer,2024-01-16,2063.03,5223.37,3160.34,0.0
+2025-12-01,SKU050,328,525,14,69,316,1138983.28,True,Active Commercial,Product 050,Storage,Sofa,2024-05-06,701.85,882.72,180.87,0.0
+2025-12-01,SKU051,114,88,12,30,80,319931.88,False,Warehouse Only (No Sales History),Uncataloged SKU051,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU052,36,0,3,29,43,37849.32,False,Warehouse Only (No Sales History),Uncataloged SKU052,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU053,1262,513,7,177,459,9363636.16,False,Warehouse Only (No Sales History),Uncataloged SKU053,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU054,223,85,12,21,99,655227.52,False,Warehouse Only (No Sales History),Uncataloged SKU054,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU055,349,280,9,55,182,2679911.67,False,Warehouse Only (No Sales History),Uncataloged SKU055,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU056,51,44,9,10,26,322126.2,False,Warehouse Only (No Sales History),Uncataloged SKU056,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU057,220,86,9,35,113,891655.6,False,Warehouse Only (No Sales History),Uncataloged SKU057,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU058,162,607,6,170,304,758304.18,False,Warehouse Only (No Sales History),Uncataloged SKU058,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU059,82,2,4,7,16,231212.12,False,Warehouse Only (No Sales History),Uncataloged SKU059,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU060,240,197,12,55,151,876374.4,False,Warehouse Only (No Sales History),Uncataloged SKU060,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU061,246,21,10,62,140,1770031.5,False,Warehouse Only (No Sales History),Uncataloged SKU061,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU062,271,339,10,112,282,1231364.38,False,Warehouse Only (No Sales History),Uncataloged SKU062,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU063,378,141,4,127,196,918373.68,False,Warehouse Only (No Sales History),Uncataloged SKU063,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU064,564,267,14,120,382,3318694.44,False,Warehouse Only (No Sales History),Uncataloged SKU064,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU065,205,73,13,66,266,1506563.45,False,Warehouse Only (No Sales History),Uncataloged SKU065,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU066,576,413,9,91,241,311011.2,False,Warehouse Only (No Sales History),Uncataloged SKU066,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU067,83,31,8,17,47,554512.21,False,Warehouse Only (No Sales History),Uncataloged SKU067,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU068,353,170,11,56,222,955863.99,False,Warehouse Only (No Sales History),Uncataloged SKU068,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU069,731,85,9,125,391,3100675.39,False,Warehouse Only (No Sales History),Uncataloged SKU069,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU070,436,418,12,71,242,3271892.24,False,Warehouse Only (No Sales History),Uncataloged SKU070,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU071,126,82,5,58,97,456372.0,False,Warehouse Only (No Sales History),Uncataloged SKU071,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU072,48,315,11,69,167,343704.0,False,Warehouse Only (No Sales History),Uncataloged SKU072,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU073,412,361,12,114,479,2955774.52,False,Warehouse Only (No Sales History),Uncataloged SKU073,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU074,18,0,9,5,11,48572.1,False,Warehouse Only (No Sales History),Uncataloged SKU074,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU075,593,181,11,322,921,1865489.05,False,Warehouse Only (No Sales History),Uncataloged SKU075,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU076,45,0,4,8,14,271692.9,False,Warehouse Only (No Sales History),Uncataloged SKU076,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU077,185,13,7,34,111,391741.2,False,Warehouse Only (No Sales History),Uncataloged SKU077,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU078,130,71,8,26,64,869845.6,False,Warehouse Only (No Sales History),Uncataloged SKU078,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU079,567,274,4,74,143,2775589.74,False,Warehouse Only (No Sales History),Uncataloged SKU079,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU080,228,273,9,121,299,404100.36,False,Warehouse Only (No Sales History),Uncataloged SKU080,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU081,178,16,13,73,242,1385133.7,False,Warehouse Only (No Sales History),Uncataloged SKU081,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU082,93,125,4,46,91,126964.53,False,Warehouse Only (No Sales History),Uncataloged SKU082,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU083,72,35,11,15,44,91556.64,False,Warehouse Only (No Sales History),Uncataloged SKU083,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU084,77,178,13,46,157,91953.4,False,Warehouse Only (No Sales History),Uncataloged SKU084,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU085,324,40,11,75,208,1540182.6,False,Warehouse Only (No Sales History),Uncataloged SKU085,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU086,119,6,9,29,77,771354.43,False,Warehouse Only (No Sales History),Uncataloged SKU086,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU087,354,195,3,74,119,448057.8,False,Warehouse Only (No Sales History),Uncataloged SKU087,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU088,478,188,4,104,163,3555655.58,False,Warehouse Only (No Sales History),Uncataloged SKU088,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU089,330,101,8,34,113,1332054.9,False,Warehouse Only (No Sales History),Uncataloged SKU089,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU090,310,344,11,43,176,2373384.8,False,Warehouse Only (No Sales History),Uncataloged SKU090,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU091,249,180,4,74,113,110222.34,False,Warehouse Only (No Sales History),Uncataloged SKU091,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU092,26,10,3,10,17,134246.06,False,Warehouse Only (No Sales History),Uncataloged SKU092,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU093,443,158,8,93,239,1549676.02,False,Warehouse Only (No Sales History),Uncataloged SKU093,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU094,18,7,11,5,14,87647.94,False,Warehouse Only (No Sales History),Uncataloged SKU094,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU095,139,203,3,86,130,538237.19,False,Warehouse Only (No Sales History),Uncataloged SKU095,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU096,124,64,6,13,36,48141.76,False,Warehouse Only (No Sales History),Uncataloged SKU096,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU097,230,533,12,87,279,1477825.9,False,Warehouse Only (No Sales History),Uncataloged SKU097,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU098,110,169,14,56,302,479980.6,False,Warehouse Only (No Sales History),Uncataloged SKU098,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU099,511,11,6,113,217,2516204.88,False,Warehouse Only (No Sales History),Uncataloged SKU099,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU100,185,604,11,77,313,582737.05,False,Warehouse Only (No Sales History),Uncataloged SKU100,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU101,289,397,7,172,376,2015211.45,False,Warehouse Only (No Sales History),Uncataloged SKU101,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU102,56,72,8,60,130,121562.56,False,Warehouse Only (No Sales History),Uncataloged SKU102,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU103,140,230,12,97,349,920977.4,False,Warehouse Only (No Sales History),Uncataloged SKU103,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU104,225,82,10,42,129,172311.75,False,Warehouse Only (No Sales History),Uncataloged SKU104,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU105,204,21,6,78,168,1354794.6,False,Warehouse Only (No Sales History),Uncataloged SKU105,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU106,186,311,13,97,384,253891.86,False,Warehouse Only (No Sales History),Uncataloged SKU106,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU107,39,96,6,40,76,95806.62,False,Warehouse Only (No Sales History),Uncataloged SKU107,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU108,7,15,12,5,16,8015.35,False,Warehouse Only (No Sales History),Uncataloged SKU108,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU109,149,41,7,42,84,238917.03,False,Warehouse Only (No Sales History),Uncataloged SKU109,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU110,511,193,3,112,192,2468824.96,False,Warehouse Only (No Sales History),Uncataloged SKU110,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU111,105,134,11,18,69,285015.15,False,Warehouse Only (No Sales History),Uncataloged SKU111,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU112,454,521,13,124,442,3192205.66,False,Warehouse Only (No Sales History),Uncataloged SKU112,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU113,59,86,6,26,59,97739.99,False,Warehouse Only (No Sales History),Uncataloged SKU113,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU114,235,76,8,41,125,512946.25,False,Warehouse Only (No Sales History),Uncataloged SKU114,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU115,236,28,4,42,92,149085.92,False,Warehouse Only (No Sales History),Uncataloged SKU115,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU116,114,114,8,21,65,491236.26,False,Warehouse Only (No Sales History),Uncataloged SKU116,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU117,173,42,12,64,192,112917.1,False,Warehouse Only (No Sales History),Uncataloged SKU117,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU118,67,13,6,15,33,68214.71,False,Warehouse Only (No Sales History),Uncataloged SKU118,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU119,139,177,6,46,104,1089992.13,False,Warehouse Only (No Sales History),Uncataloged SKU119,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU120,157,256,13,47,192,987679.15,False,Warehouse Only (No Sales History),Uncataloged SKU120,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU121,10,5,11,7,18,12927.8,False,Warehouse Only (No Sales History),Uncataloged SKU121,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU122,152,59,8,29,75,643754.96,False,Warehouse Only (No Sales History),Uncataloged SKU122,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU123,132,589,14,80,298,426946.08,False,Warehouse Only (No Sales History),Uncataloged SKU123,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU124,78,60,10,35,85,180577.02,False,Warehouse Only (No Sales History),Uncataloged SKU124,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU125,326,178,9,129,285,1134770.14,False,Warehouse Only (No Sales History),Uncataloged SKU125,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU126,304,358,11,79,281,941858.88,False,Warehouse Only (No Sales History),Uncataloged SKU126,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU127,347,520,11,95,265,1107224.95,False,Warehouse Only (No Sales History),Uncataloged SKU127,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU128,428,150,13,130,399,1091738.12,False,Warehouse Only (No Sales History),Uncataloged SKU128,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU129,81,40,3,23,32,322141.86,False,Warehouse Only (No Sales History),Uncataloged SKU129,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU130,692,322,6,135,274,3044537.04,False,Warehouse Only (No Sales History),Uncataloged SKU130,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU131,95,135,9,39,87,615983.8,False,Warehouse Only (No Sales History),Uncataloged SKU131,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU132,184,196,14,71,274,948540.24,False,Warehouse Only (No Sales History),Uncataloged SKU132,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU133,1024,1089,14,271,781,1862287.36,False,Warehouse Only (No Sales History),Uncataloged SKU133,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU134,191,180,11,43,146,1321828.87,False,Warehouse Only (No Sales History),Uncataloged SKU134,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU135,223,288,10,86,213,220098.77,False,Warehouse Only (No Sales History),Uncataloged SKU135,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU136,74,152,10,35,80,66956.68,False,Warehouse Only (No Sales History),Uncataloged SKU136,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU137,468,437,12,202,662,3594857.76,False,Warehouse Only (No Sales History),Uncataloged SKU137,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU138,77,80,13,37,116,373530.08,False,Warehouse Only (No Sales History),Uncataloged SKU138,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU139,490,282,5,101,194,3715037.9,False,Warehouse Only (No Sales History),Uncataloged SKU139,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU140,236,449,14,152,544,1138249.24,False,Warehouse Only (No Sales History),Uncataloged SKU140,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU141,139,268,3,127,188,219273.89,False,Warehouse Only (No Sales History),Uncataloged SKU141,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU142,349,604,14,104,316,1635532.66,False,Warehouse Only (No Sales History),Uncataloged SKU142,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU143,328,234,7,68,163,2023894.48,False,Warehouse Only (No Sales History),Uncataloged SKU143,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU144,115,31,13,15,66,467381.85,False,Warehouse Only (No Sales History),Uncataloged SKU144,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU145,885,135,13,169,655,1042476.9,False,Warehouse Only (No Sales History),Uncataloged SKU145,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU146,394,47,10,92,238,366317.56,False,Warehouse Only (No Sales History),Uncataloged SKU146,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU147,154,83,10,70,187,962652.46,False,Warehouse Only (No Sales History),Uncataloged SKU147,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU148,62,133,13,17,79,175812.78,False,Warehouse Only (No Sales History),Uncataloged SKU148,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU149,387,332,9,85,199,908153.55,False,Warehouse Only (No Sales History),Uncataloged SKU149,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU150,92,239,14,59,231,247195.72,False,Warehouse Only (No Sales History),Uncataloged SKU150,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU151,981,971,5,299,486,7362395.19,False,Warehouse Only (No Sales History),Uncataloged SKU151,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU152,490,205,14,62,261,1578157.7,False,Warehouse Only (No Sales History),Uncataloged SKU152,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU153,376,143,3,64,104,2821910.08,False,Warehouse Only (No Sales History),Uncataloged SKU153,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU154,189,50,6,19,51,749405.79,False,Warehouse Only (No Sales History),Uncataloged SKU154,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU155,233,51,13,47,139,1354345.12,False,Warehouse Only (No Sales History),Uncataloged SKU155,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU156,306,15,8,129,275,357472.26,False,Warehouse Only (No Sales History),Uncataloged SKU156,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU157,47,40,10,14,33,56159.83,False,Warehouse Only (No Sales History),Uncataloged SKU157,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU158,455,47,4,144,244,2533098.75,False,Warehouse Only (No Sales History),Uncataloged SKU158,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU159,311,231,14,146,502,2067170.35,False,Warehouse Only (No Sales History),Uncataloged SKU159,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU160,126,87,14,50,140,479272.5,False,Warehouse Only (No Sales History),Uncataloged SKU160,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU161,270,169,10,86,251,1989338.4,False,Warehouse Only (No Sales History),Uncataloged SKU161,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU162,353,166,8,126,353,390792.18,False,Warehouse Only (No Sales History),Uncataloged SKU162,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU163,165,23,4,57,101,404297.85,False,Warehouse Only (No Sales History),Uncataloged SKU163,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU164,190,228,11,53,166,204202.5,False,Warehouse Only (No Sales History),Uncataloged SKU164,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU165,123,22,13,66,217,650481.81,False,Warehouse Only (No Sales History),Uncataloged SKU165,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU166,89,204,8,56,178,640978.89,False,Warehouse Only (No Sales History),Uncataloged SKU166,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU167,195,247,13,48,140,264891.9,False,Warehouse Only (No Sales History),Uncataloged SKU167,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU168,237,208,8,45,116,423300.96,False,Warehouse Only (No Sales History),Uncataloged SKU168,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU169,323,28,4,56,115,171273.98,False,Warehouse Only (No Sales History),Uncataloged SKU169,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU170,261,138,12,37,154,169741.35,False,Warehouse Only (No Sales History),Uncataloged SKU170,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU171,92,104,11,30,80,193087.76,False,Warehouse Only (No Sales History),Uncataloged SKU171,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU172,57,34,7,7,22,39532.35,False,Warehouse Only (No Sales History),Uncataloged SKU172,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU173,418,158,3,44,84,2605745.12,False,Warehouse Only (No Sales History),Uncataloged SKU173,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU174,645,455,5,96,235,4350105.75,False,Warehouse Only (No Sales History),Uncataloged SKU174,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU175,141,13,9,58,216,171760.56,False,Warehouse Only (No Sales History),Uncataloged SKU175,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU176,133,75,6,34,62,801352.93,False,Warehouse Only (No Sales History),Uncataloged SKU176,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU177,43,49,5,23,57,62474.7,False,Warehouse Only (No Sales History),Uncataloged SKU177,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU178,289,67,4,70,108,504614.23,False,Warehouse Only (No Sales History),Uncataloged SKU178,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU179,457,1139,7,320,600,3585891.63,False,Warehouse Only (No Sales History),Uncataloged SKU179,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU180,533,47,14,189,740,358378.54,False,Warehouse Only (No Sales History),Uncataloged SKU180,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU181,1192,381,8,155,444,8465738.96,False,Warehouse Only (No Sales History),Uncataloged SKU181,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU182,412,22,8,80,186,655796.88,False,Warehouse Only (No Sales History),Uncataloged SKU182,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU183,1018,347,9,530,1179,7986423.78,False,Warehouse Only (No Sales History),Uncataloged SKU183,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU184,150,28,7,51,103,948994.5,False,Warehouse Only (No Sales History),Uncataloged SKU184,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU185,197,63,8,47,125,270827.72,False,Warehouse Only (No Sales History),Uncataloged SKU185,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU186,178,137,11,168,419,460202.98,False,Warehouse Only (No Sales History),Uncataloged SKU186,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU187,394,126,4,111,170,2080934.64,False,Warehouse Only (No Sales History),Uncataloged SKU187,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU188,246,261,8,105,232,344498.4,False,Warehouse Only (No Sales History),Uncataloged SKU188,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU189,186,124,5,36,67,730014.66,False,Warehouse Only (No Sales History),Uncataloged SKU189,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU190,68,309,13,75,244,87667.64,False,Warehouse Only (No Sales History),Uncataloged SKU190,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU191,62,294,14,48,152,221107.5,False,Warehouse Only (No Sales History),Uncataloged SKU191,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU192,132,52,9,30,68,682226.16,False,Warehouse Only (No Sales History),Uncataloged SKU192,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU193,241,124,13,39,140,466725.42,False,Warehouse Only (No Sales History),Uncataloged SKU193,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU194,92,146,3,85,132,249050.44,False,Warehouse Only (No Sales History),Uncataloged SKU194,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU195,543,248,4,66,144,2131019.79,False,Warehouse Only (No Sales History),Uncataloged SKU195,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU196,20,2,9,9,24,93731.0,False,Warehouse Only (No Sales History),Uncataloged SKU196,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU197,223,49,8,72,186,1175566.8,False,Warehouse Only (No Sales History),Uncataloged SKU197,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU198,294,62,11,38,163,793994.04,False,Warehouse Only (No Sales History),Uncataloged SKU198,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU199,347,306,14,83,292,1246941.03,False,Warehouse Only (No Sales History),Uncataloged SKU199,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
+2025-12-01,SKU200,96,65,9,18,68,292328.64,False,Warehouse Only (No Sales History),Uncataloged SKU200,Unassigned (Pending Master),Unassigned (Pending Master),,,,,
