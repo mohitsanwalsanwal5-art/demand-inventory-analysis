@@ -96,9 +96,9 @@ class InventoryRiskEngine:
 
         # 1. Lead-time demand calculation (dynamically handles lead times of 3 to 14 days)
         def calc_lead_time_demand(row: pd.Series) -> float:
-            lt = row["Lead_Time_Days"]
-            w1 = row["fc_w1"]
-            w2 = row["fc_w2"]
+            lt = int(row["Lead_Time_Days"])
+            w1 = float(row["fc_w1"])
+            w2 = float(row["fc_w2"])
             if lt <= 7:
                 return round((w1 / 7.0) * lt, 1)
             else:
@@ -106,27 +106,33 @@ class InventoryRiskEngine:
 
         active_df["lead_time_demand"] = active_df.apply(calc_lead_time_demand, axis=1)
 
-        # 2. Available inventory & buffers
+        # 2. Available inventory & Required buffer
         active_df["available_units"] = active_df["Current_Stock"] + active_df["On_Order"]
-        active_df["required_buffer"] = (active_df["lead_time_demand"] + active_df["Safety_Stock"]).round(1)
+        active_df["required_inventory_buffer"] = (active_df["lead_time_demand"] + active_df["Safety_Stock"]).round(1)
+        active_df["required_buffer"] = active_df["required_inventory_buffer"]  # compatibility alias
 
-        # Gaps
-        active_df["stock_gap_units"] = (active_df["lead_time_demand"] - active_df["available_units"]).apply(lambda x: max(0.0, round(x, 1)))
-        active_df["buffer_gap_units"] = (active_df["required_buffer"] - active_df["available_units"]).apply(lambda x: max(0.0, round(x, 1)))
+        # Primary stockout flag (forecast-driven buffer breach)
+        # stockout_flag = 1 if available_units < required_inventory_buffer else 0
+        active_df["stockout_flag"] = (active_df["available_units"] < active_df["required_inventory_buffer"]).astype(int)
+
+        # Separate explanatory indicators (preserved for operational transparency)
+        active_df["current_stock_below_reorder_point"] = (active_df["Current_Stock"] <= active_df["Reorder_Point"]).astype(int)
         active_df["reorder_gap_units"] = (active_df["Reorder_Point"] - active_df["Current_Stock"]).apply(lambda x: max(0.0, round(x, 1)))
+        active_df["lead_time_stock_gap"] = (active_df["lead_time_demand"] - active_df["available_units"]).apply(lambda x: max(0.0, round(x, 1)))
+        active_df["safety_stock_gap"] = (active_df["Safety_Stock"] - active_df["available_units"]).apply(lambda x: max(0.0, round(x, 1)))
+        active_df["buffer_gap_units"] = (active_df["required_inventory_buffer"] - active_df["available_units"]).apply(lambda x: max(0.0, round(x, 1)))
+        active_df["stock_gap_units"] = active_df["buffer_gap_units"]  # compatibility alias
 
-        # 3. Stockout Risk Score & Flag
-        # Based on physical warehouse stock relative to Reorder Point (continuous [0.0, 1.0])
-        # Score >= 0.50 triggers when Current_Stock <= Reorder_Point
+        # 3. Explainable continuous monotonic Stockout Risk Score [0.0, 1.0]
+        # Score increases monotonically as available inventory falls below required buffer.
+        # Score = 1.0 - 0.5 * (available_units / required_inventory_buffer), clipped to [0.0, 1.0].
+        # Score > 0.50 strictly coincides with available_units < required_inventory_buffer (boundary score = 0.50).
         active_df["stockout_score"] = np.clip(
-            1.0 - 0.5 * (active_df["Current_Stock"] / active_df["Reorder_Point"]),
+            1.0 - 0.5 * (active_df["available_units"] / active_df["required_inventory_buffer"]),
             0.0, 1.0
         ).round(3)
-        active_df["stockout_flag"] = (active_df["stockout_score"] >= 0.5).astype(int)
 
-        # 4. Overstock Risk Score & Flag
-        # Based on Current_Stock relative to 4-week forward demand target (continuous [0.0, 1.0])
-        # Score >= 0.50 triggers when Current_Stock > forward_demand_units
+        # 4. Overstock Risk Score & Flag (Forecast-driven 4-week methodology)
         active_df["excess_units"] = np.where(
             active_df["Current_Stock"] > active_df["forward_demand_units"],
             (active_df["Current_Stock"] - active_df["forward_demand_units"]).round(1),
@@ -136,7 +142,7 @@ class InventoryRiskEngine:
             0.5 * (active_df["Current_Stock"] / active_df["forward_demand_units"]),
             0.0, 1.0
         ).round(3)
-        active_df["overstock_flag"] = (active_df["overstock_score"] >= 0.5).astype(int)
+        active_df["overstock_flag"] = (active_df["Current_Stock"] > active_df["forward_demand_units"]).astype(int)
 
         # 5. Four Decision Quadrants mapping
         def assign_quadrant(row: pd.Series) -> str:
@@ -159,7 +165,7 @@ class InventoryRiskEngine:
             if q == "Reorder Now":
                 return (
                     "Prioritize replenishment purchase order review",
-                    f"Physical stock ({row['Current_Stock']}) is below Reorder Point ({row['Reorder_Point']}); lead time is {row['Lead_Time_Days']} days."
+                    f"Available inventory ({row['available_units']}) breaches required buffer ({row['required_inventory_buffer']} = {row['lead_time_demand']} LTD + {row['Safety_Stock']} SS); buffer gap is {row['buffer_gap_units']} units."
                 )
             elif q == "Markdown / Clear":
                 return (
@@ -169,12 +175,12 @@ class InventoryRiskEngine:
             elif q == "Watch / Volatile":
                 return (
                     "Investigate demand volatility and inventory positioning",
-                    f"Physical stock is low ({row['Current_Stock']} <= {row['Reorder_Point']}), but incoming pipeline or holdings create overstock potential."
+                    f"Buffer breach stockout risk coexists with excess holding above 4-week forecast demand."
                 )
             else:
                 return (
                     "Maintain current inventory position and monitor",
-                    f"Stock levels ({row['Current_Stock']}) are well-balanced against forward 4-week demand ({row['forward_demand_units']})."
+                    f"Available inventory ({row['available_units']}) safely covers required buffer ({row['required_inventory_buffer']}) and stock is within 4-week demand."
                 )
 
         rec_tuples = active_df.apply(assign_recommendation, axis=1)
@@ -183,10 +189,13 @@ class InventoryRiskEngine:
 
         # 7. Rupee Impact Calculations
         # Stockout exposure: Revenue at risk = units_at_stockout_risk * Selling_Price
+        # Note: revenue_at_risk is an exposure estimate, NOT guaranteed lost revenue.
         # Overstock exposure: Inventory value tied up = excess_units * Cost_Price
+        # Note: inventory_value_tied_up is capital tied up, NOT guaranteed loss.
+        # Value at stake: Decision-support exposure metric (revenue_at_risk + inventory_value_tied_up).
         active_df["units_at_stockout_risk"] = np.where(
             active_df["stockout_flag"] == 1,
-            active_df["reorder_gap_units"],
+            active_df["buffer_gap_units"],
             0.0
         )
         active_df["revenue_at_risk"] = (active_df["units_at_stockout_risk"] * active_df["Selling_Price"]).round(2)
@@ -197,10 +206,14 @@ class InventoryRiskEngine:
         # Ensure 150 warehouse-only SKUs are preserved with explicit status
         inactive_df["lead_time_demand"] = 0.0
         inactive_df["available_units"] = inactive_df["Current_Stock"] + inactive_df["On_Order"]
-        inactive_df["required_buffer"] = inactive_df["Safety_Stock"].round(1)
-        inactive_df["stock_gap_units"] = 0.0
-        inactive_df["buffer_gap_units"] = 0.0
+        inactive_df["required_inventory_buffer"] = inactive_df["Safety_Stock"].astype(float).round(1)
+        inactive_df["required_buffer"] = inactive_df["required_inventory_buffer"]
+        inactive_df["current_stock_below_reorder_point"] = 0
         inactive_df["reorder_gap_units"] = 0.0
+        inactive_df["lead_time_stock_gap"] = 0.0
+        inactive_df["safety_stock_gap"] = 0.0
+        inactive_df["buffer_gap_units"] = 0.0
+        inactive_df["stock_gap_units"] = 0.0
         inactive_df["units_at_stockout_risk"] = 0.0
         inactive_df["stockout_score"] = 0.0
         inactive_df["stockout_flag"] = 0
@@ -232,17 +245,17 @@ class InventoryRiskEngine:
             "quadrant_percentages": q_percentages,
             "stockout_risk_count": int(active_df["stockout_flag"].sum()),
             "stockout_risk_pct": round(float(active_df["stockout_flag"].sum() / len(active_df) * 100), 1),
-            "total_units_at_stockout_risk": int(active_df["units_at_stockout_risk"].sum()),
+            "total_units_at_stockout_risk": float(round(active_df["units_at_stockout_risk"].sum(), 1)),
             "total_revenue_at_risk": float(round(active_df["revenue_at_risk"].sum(), 2)),
             "overstock_risk_count": int(active_df["overstock_flag"].sum()),
             "overstock_risk_pct": round(float(active_df["overstock_flag"].sum() / len(active_df) * 100), 1),
-            "total_excess_inventory_units": int(active_df["excess_units"].sum()),
+            "total_excess_inventory_units": float(round(active_df["excess_units"].sum(), 1)),
             "total_active_inventory_value_tied_up": float(round(active_df["inventory_value_tied_up"].sum(), 2)),
             "total_value_at_stake": float(round(active_df["value_at_stake"].sum(), 2)),
             "inactive_warehouse_value_tied_up": float(round(inactive_df["Inventory_Value"].sum(), 2)),
             "top_stockout_skus": active_df[active_df["stockout_flag"] == 1].sort_values(by="revenue_at_risk", ascending=False)[
                 ["SKU", "Product_Name", "revenue_at_risk", "units_at_stockout_risk", "decision_quadrant"]
-            ].head(5).to_dict(orient="records"),
+            ].head(6).to_dict(orient="records"),
             "top_overstock_skus": active_df[active_df["overstock_flag"] == 1].sort_values(by="inventory_value_tied_up", ascending=False)[
                 ["SKU", "Product_Name", "inventory_value_tied_up", "excess_units", "decision_quadrant"]
             ].head(5).to_dict(orient="records"),
@@ -344,13 +357,39 @@ class InventoryRiskEngine:
         assert active_df["SKU"].duplicated().sum() == 0, "Duplicate active SKUs found!"
         assert full_grid_df["SKU"].duplicated().sum() == 0, "Duplicate SKUs in decision grid!"
         
+        # Quadrant reconciliation
+        valid_quadrants = {"Reorder Now", "Markdown / Clear", "Watch / Volatile", "Healthy"}
+        assert set(active_df["decision_quadrant"]).issubset(valid_quadrants), "Invalid active quadrant found!"
+        assert sum(summary_metrics["quadrant_counts"].values()) == 50, "Quadrant counts do not reconcile to 50!"
+        assert active_df["decision_quadrant"].notnull().all(), "Null quadrant detected!"
+
+        # Supply-chain logic assertions
+        # 1. On_Order incorporated in available inventory
+        assert ((active_df["Current_Stock"] + active_df["On_Order"]) == active_df["available_units"]).all(), "Available units must equal Current_Stock + On_Order!"
+        # 2. Safety_Stock incorporated in required buffer
+        assert (np.isclose(active_df["required_inventory_buffer"], active_df["lead_time_demand"] + active_df["Safety_Stock"], atol=0.15)).all(), "Required buffer must equal lead_time_demand + Safety_Stock!"
+        # 3. Stockout flag consistency with buffer breach
+        assert ((active_df["available_units"] < active_df["required_inventory_buffer"]) == (active_df["stockout_flag"] == 1)).all(), "Stockout flag must strictly equal (available_units < required_inventory_buffer)!"
+        # 4. Stockout score threshold consistency (score > 0.50 coincides with stockout_flag == 1)
+        assert ((active_df["stockout_score"] > 0.50) == (active_df["stockout_flag"] == 1)).all(), "Stockout score > 0.50 must coincide with stockout_flag == 1!"
+        # 5. Stockout units at risk derive from buffer gap
+        assert (active_df.loc[active_df["stockout_flag"] == 1, "units_at_stockout_risk"] == active_df.loc[active_df["stockout_flag"] == 1, "buffer_gap_units"]).all(), "Units at stockout risk must equal buffer_gap_units for flagged SKUs!"
+        assert (active_df.loc[active_df["stockout_flag"] == 0, "units_at_stockout_risk"] == 0.0).all(), "Units at stockout risk must be 0 for unflagged SKUs!"
+        # 6. Monetary calculations reconcile
+        assert np.isclose(active_df["revenue_at_risk"].sum(), (active_df["units_at_stockout_risk"] * active_df["Selling_Price"]).sum(), atol=1.0), "Revenue at risk does not reconcile!"
+        assert np.isclose(active_df["inventory_value_tied_up"].sum(), (active_df["excess_units"] * active_df["Cost_Price"]).sum(), atol=1.0), "Inventory value tied up does not reconcile!"
+        assert np.isclose(active_df["value_at_stake"].sum(), (active_df["revenue_at_risk"] + active_df["inventory_value_tied_up"]).sum(), atol=1.0), "Value at stake does not reconcile!"
+
         required_cols = [
             "SKU", "Product_Name", "Category", "Current_Stock", "On_Order",
             "Lead_Time_Days", "Safety_Stock", "Reorder_Point", "lead_time_demand",
-            "available_units", "stock_gap_units", "stockout_score", "stockout_flag",
+            "available_units", "required_inventory_buffer",
+            "current_stock_below_reorder_point", "reorder_gap_units",
+            "lead_time_stock_gap", "safety_stock_gap", "buffer_gap_units",
+            "units_at_stockout_risk", "stockout_score", "stockout_flag",
             "forward_demand_units", "excess_units", "overstock_score", "overstock_flag",
-            "decision_quadrant", "recommended_action", "revenue_at_risk",
-            "inventory_value_tied_up", "value_at_stake"
+            "decision_quadrant", "recommended_action", "action_rationale",
+            "revenue_at_risk", "inventory_value_tied_up", "value_at_stake"
         ]
         
         for col in required_cols:

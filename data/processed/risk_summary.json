@@ -2,62 +2,67 @@
   "active_skus_evaluated": 50,
   "total_warehouse_skus_reconciled": 200,
   "quadrant_counts": {
-    "Markdown / Clear": 18,
-    "Healthy": 17,
-    "Reorder Now": 13,
-    "Watch / Volatile": 2
+    "Healthy": 24,
+    "Markdown / Clear": 20,
+    "Reorder Now": 6
   },
   "quadrant_percentages": {
-    "Markdown / Clear": 36.0,
-    "Healthy": 34.0,
-    "Reorder Now": 26.0,
-    "Watch / Volatile": 4.0
+    "Healthy": 48.0,
+    "Markdown / Clear": 40.0,
+    "Reorder Now": 12.0
   },
-  "stockout_risk_count": 15,
-  "stockout_risk_pct": 30.0,
-  "total_units_at_stockout_risk": 1046,
-  "total_revenue_at_risk": 5212198.38,
+  "stockout_risk_count": 6,
+  "stockout_risk_pct": 12.0,
+  "total_units_at_stockout_risk": 660.2,
+  "total_revenue_at_risk": 4517903.87,
   "overstock_risk_count": 20,
   "overstock_risk_pct": 40.0,
-  "total_excess_inventory_units": 4456,
+  "total_excess_inventory_units": 4456.0,
   "total_active_inventory_value_tied_up": 13430492.25,
-  "total_value_at_stake": 18642690.63,
+  "total_value_at_stake": 17948396.12,
   "inactive_warehouse_value_tied_up": 174874618.36,
   "top_stockout_skus": [
     {
+      "SKU": "SKU012",
+      "Product_Name": "Product 012",
+      "revenue_at_risk": 1825231.02,
+      "units_at_stockout_risk": 207.9,
+      "decision_quadrant": "Reorder Now"
+    },
+    {
       "SKU": "SKU017",
       "Product_Name": "Product 017",
-      "revenue_at_risk": 1517440.28,
-      "units_at_stockout_risk": 179.0,
+      "revenue_at_risk": 1334330.17,
+      "units_at_stockout_risk": 157.4,
       "decision_quadrant": "Reorder Now"
     },
     {
-      "SKU": "SKU037",
-      "Product_Name": "Product 037",
-      "revenue_at_risk": 794004.38,
-      "units_at_stockout_risk": 289.0,
+      "SKU": "SKU031",
+      "Product_Name": "Product 031",
+      "revenue_at_risk": 1121740.19,
+      "units_at_stockout_risk": 128.7,
       "decision_quadrant": "Reorder Now"
     },
     {
-      "SKU": "SKU029",
-      "Product_Name": "Product 029",
-      "revenue_at_risk": 791686.6,
-      "units_at_stockout_risk": 68.0,
+      "SKU": "SKU040",
+      "Product_Name": "Product 040",
+      "revenue_at_risk": 153405.06,
+      "units_at_stockout_risk": 62.6,
       "decision_quadrant": "Reorder Now"
     },
     {
-      "SKU": "SKU028",
-      "Product_Name": "Product 028",
-      "revenue_at_risk": 567906.67,
-      "units_at_stockout_risk": 163.0,
-      "decision_quadrant": "Watch / Volatile"
+      "SKU": "SKU010",
+      "Product_Name": "Product 010",
+      "revenue_at_risk": 55996.02,
+      "units_at_stockout_risk": 84.4,
+      "decision_quadrant": "Reorder Now"
     },
     {
-      "SKU": "SKU015",
-      "Product_Name": "Product 015",
-      "revenue_at_risk": 484545.36,
-      "units_at_stockout_risk": 78.0,
-      "decision_quadrant": "Watch / Volatile"
+      "SKU": "SKU023",
+      "Product_Name": "Product 023",
+      "revenue_at_risk": 27201.41,
+      "units_at_stockout_risk": 19.2,
+      "decision_quadrant": "Reorder Now"
     }
   ],
   "top_overstock_skus": [
@@ -105,9 +110,9 @@
       "decision_quadrant": "Markdown / Clear"
     },
     {
-      "SKU": "SKU017",
-      "Product_Name": "Product 017",
-      "value_at_stake": 1517440.28,
+      "SKU": "SKU012",
+      "Product_Name": "Product 012",
+      "value_at_stake": 1825231.02,
       "decision_quadrant": "Reorder Now"
     },
     {
@@ -123,10 +128,10 @@
       "decision_quadrant": "Markdown / Clear"
     },
     {
-      "SKU": "SKU011",
-      "Product_Name": "Product 011",
-      "value_at_stake": 1153733.76,
-      "decision_quadrant": "Markdown / Clear"
+      "SKU": "SKU017",
+      "Product_Name": "Product 017",
+      "value_at_stake": 1334330.17,
+      "decision_quadrant": "Reorder Now"
     }
   ]
 }
