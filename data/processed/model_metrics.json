@@ -1,0 +1,56 @@
+{
+  "backtest_origins_count": 4,
+  "forecast_horizon_weeks": 8,
+  "predictions_evaluated": 1600,
+  "skus_evaluated": 50,
+  "baseline_metrics": {
+    "wape": 0.1117,
+    "wape_pct": 11.17,
+    "bias": 0.2806,
+    "mae": 10.23,
+    "rmse": 13.37
+  },
+  "ml_metrics": {
+    "wape": 0.1056,
+    "wape_pct": 10.56,
+    "bias": 2.0277,
+    "mae": 9.67,
+    "rmse": 12.8
+  },
+  "ml_beats_baseline": true,
+  "selected_final_method": "HistGradientBoostingRegressor",
+  "origin_breakdown": [
+    {
+      "origin_index": 71,
+      "origin_date": "2025-05-12",
+      "baseline_wape": 0.10039611758437768,
+      "ml_wape": 0.1051194143945887,
+      "baseline_bias": 0.405,
+      "ml_bias": 6.61675
+    },
+    {
+      "origin_index": 79,
+      "origin_date": "2025-07-07",
+      "baseline_wape": 0.11689866369710468,
+      "ml_wape": 0.11144209354120267,
+      "baseline_bias": 0.3125,
+      "ml_bias": 1.9649999999999994
+    },
+    {
+      "origin_index": 87,
+      "origin_date": "2025-09-01",
+      "baseline_wape": 0.11370342205323195,
+      "ml_wape": 0.1030296577946768,
+      "baseline_bias": 0.205,
+      "ml_bias": -0.8257500000000002
+    },
+    {
+      "origin_index": 95,
+      "origin_date": "2025-10-27",
+      "baseline_wape": 0.1187167014130183,
+      "ml_wape": 0.10259149872596711,
+      "baseline_bias": 0.2,
+      "ml_bias": 0.35474999999999957
+    }
+  ]
+}

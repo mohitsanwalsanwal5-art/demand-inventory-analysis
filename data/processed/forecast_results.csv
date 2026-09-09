@@ -1,0 +1,401 @@
+Forecast_Week,Horizon_Step,SKU,Product_Name,Category,Subcategory,Forecast_Units,Baseline_Units,ML_Units,Interval_P10,Interval_P90,Selling_Price,Cost_Price,Forecast_Revenue,Forecast_Method
+2025-12-29,1,SKU001,Product 001,Furniture,Chair,89.8,78.0,89.8,82.9,97.0,3664.05,1758.45,329031.69,HistGradientBoostingRegressor
+2025-12-29,1,SKU002,Product 002,Home Decor,Table,60.8,70.0,60.8,53.9,68.0,3805.69,3867.09,231385.95,HistGradientBoostingRegressor
+2025-12-29,1,SKU003,Product 003,Kitchen,Cushion,33.1,32.0,33.1,26.2,40.3,8078.23,589.48,267389.41,HistGradientBoostingRegressor
+2025-12-29,1,SKU004,Product 004,Lighting,Cookware,35.1,37.0,35.1,28.2,42.3,6861.57,1445.74,240841.11,HistGradientBoostingRegressor
+2025-12-29,1,SKU005,Product 005,Storage,Lamp,115.8,111.0,115.8,108.9,123.0,9493.22,5543.63,1099314.88,HistGradientBoostingRegressor
+2025-12-29,1,SKU006,Product 006,Furniture,Shelf,42.5,45.0,42.5,35.6,49.7,8106.04,6021.91,344506.7,HistGradientBoostingRegressor
+2025-12-29,1,SKU007,Product 007,Home Decor,Cabinet,170.4,175.0,170.4,163.5,177.6,5114.09,7748.2,871440.94,HistGradientBoostingRegressor
+2025-12-29,1,SKU008,Product 008,Kitchen,Rug,112.3,103.0,112.3,105.4,119.5,9842.64,2775.15,1105328.47,HistGradientBoostingRegressor
+2025-12-29,1,SKU009,Product 009,Lighting,Organizer,78.3,66.0,78.3,71.4,85.5,2336.89,3121.06,182978.49,HistGradientBoostingRegressor
+2025-12-29,1,SKU010,Product 010,Storage,Sofa,114.3,116.0,114.3,107.4,121.5,663.46,3889.06,75833.48,HistGradientBoostingRegressor
+2025-12-29,1,SKU011,Product 011,Furniture,Chair,18.7,17.0,18.7,11.8,25.9,1444.56,1718.4,27013.27,HistGradientBoostingRegressor
+2025-12-29,1,SKU012,Product 012,Home Decor,Table,174.8,161.0,174.8,167.9,182.0,8779.37,1256.89,1534633.88,HistGradientBoostingRegressor
+2025-12-29,1,SKU013,Product 013,Kitchen,Cushion,85.0,82.0,85.0,78.1,92.2,5757.78,3936.71,489411.3,HistGradientBoostingRegressor
+2025-12-29,1,SKU014,Product 014,Lighting,Cookware,132.6,131.0,132.6,125.7,139.8,2270.75,2008.55,301101.45,HistGradientBoostingRegressor
+2025-12-29,1,SKU015,Product 015,Storage,Lamp,24.6,31.0,24.6,17.7,31.8,6212.12,5441.06,152818.15,HistGradientBoostingRegressor
+2025-12-29,1,SKU016,Product 016,Furniture,Shelf,87.7,92.0,87.7,80.8,94.9,2166.82,3637.93,190030.11,HistGradientBoostingRegressor
+2025-12-29,1,SKU017,Product 017,Home Decor,Cabinet,100.0,85.0,100.0,93.1,107.2,8477.32,6703.26,847732.0,HistGradientBoostingRegressor
+2025-12-29,1,SKU018,Product 018,Kitchen,Rug,174.8,181.0,174.8,167.9,182.0,5575.41,5677.05,974581.67,HistGradientBoostingRegressor
+2025-12-29,1,SKU019,Product 019,Lighting,Organizer,107.0,100.0,107.0,100.1,114.2,4819.85,2670.84,515723.95,HistGradientBoostingRegressor
+2025-12-29,1,SKU020,Product 020,Storage,Sofa,95.9,93.0,95.9,89.0,103.1,3897.54,6700.01,373774.09,HistGradientBoostingRegressor
+2025-12-29,1,SKU021,Product 021,Furniture,Chair,52.3,48.0,52.3,45.4,59.5,7711.28,6486.92,403299.94,HistGradientBoostingRegressor
+2025-12-29,1,SKU022,Product 022,Home Decor,Table,73.5,77.0,73.5,66.6,80.7,4597.03,3252.96,337881.7,HistGradientBoostingRegressor
+2025-12-29,1,SKU023,Product 023,Kitchen,Cushion,108.8,117.0,108.8,101.9,116.0,1416.74,2484.54,154141.31,HistGradientBoostingRegressor
+2025-12-29,1,SKU024,Product 024,Lighting,Cookware,86.4,101.0,86.4,79.5,93.6,1768.87,5539.34,152830.37,HistGradientBoostingRegressor
+2025-12-29,1,SKU025,Product 025,Storage,Lamp,19.0,15.0,19.0,12.1,26.2,11558.01,1333.08,219602.19,HistGradientBoostingRegressor
+2025-12-29,1,SKU026,Product 026,Furniture,Shelf,156.8,147.0,156.8,149.9,164.0,10939.54,1799.29,1715319.87,HistGradientBoostingRegressor
+2025-12-29,1,SKU027,Product 027,Home Decor,Cabinet,174.5,185.0,174.5,167.6,181.7,8516.6,307.06,1486146.7,HistGradientBoostingRegressor
+2025-12-29,1,SKU028,Product 028,Kitchen,Rug,33.7,47.0,33.7,26.8,40.9,3484.09,6348.66,117413.83,HistGradientBoostingRegressor
+2025-12-29,1,SKU029,Product 029,Lighting,Organizer,106.6,114.0,106.6,99.7,113.8,11642.45,5402.59,1241085.17,HistGradientBoostingRegressor
+2025-12-29,1,SKU030,Product 030,Storage,Sofa,29.4,21.0,29.4,22.5,36.6,9433.51,5715.03,277345.19,HistGradientBoostingRegressor
+2025-12-29,1,SKU031,Product 031,Furniture,Chair,121.8,138.0,121.8,114.9,129.0,8715.93,6300.65,1061600.27,HistGradientBoostingRegressor
+2025-12-29,1,SKU032,Product 032,Home Decor,Table,60.4,57.0,60.4,53.5,67.6,5612.59,3806.6,339000.44,HistGradientBoostingRegressor
+2025-12-29,1,SKU033,Product 033,Kitchen,Cushion,109.3,103.0,109.3,102.4,116.5,3558.0,4657.74,388889.4,HistGradientBoostingRegressor
+2025-12-29,1,SKU034,Product 034,Lighting,Cookware,133.9,129.0,133.9,127.0,141.1,1518.14,1333.43,203278.95,HistGradientBoostingRegressor
+2025-12-29,1,SKU035,Product 035,Storage,Lamp,143.3,139.0,143.3,136.4,150.5,10870.19,1137.61,1557698.23,HistGradientBoostingRegressor
+2025-12-29,1,SKU036,Product 036,Furniture,Shelf,30.8,22.0,30.8,23.9,38.0,5687.0,5430.12,175159.6,HistGradientBoostingRegressor
+2025-12-29,1,SKU037,Product 037,Home Decor,Cabinet,158.5,159.0,158.5,151.6,165.7,2747.42,3901.0,435466.07,HistGradientBoostingRegressor
+2025-12-29,1,SKU038,Product 038,Kitchen,Rug,51.2,57.0,51.2,44.3,58.4,3949.1,4630.58,202193.92,HistGradientBoostingRegressor
+2025-12-29,1,SKU039,Product 039,Lighting,Organizer,18.2,13.0,18.2,11.3,25.4,7118.95,6178.74,129564.89,HistGradientBoostingRegressor
+2025-12-29,1,SKU040,Product 040,Storage,Sofa,93.9,101.0,93.9,87.0,101.1,2450.56,5169.07,230107.58,HistGradientBoostingRegressor
+2025-12-29,1,SKU041,Product 041,Furniture,Chair,75.9,74.0,75.9,69.0,83.1,10336.73,4540.24,784557.81,HistGradientBoostingRegressor
+2025-12-29,1,SKU042,Product 042,Home Decor,Table,159.7,157.0,159.7,152.8,166.9,9198.83,4583.86,1469053.15,HistGradientBoostingRegressor
+2025-12-29,1,SKU043,Product 043,Kitchen,Cushion,162.4,169.0,162.4,155.5,169.6,8745.77,2605.61,1420313.05,HistGradientBoostingRegressor
+2025-12-29,1,SKU044,Product 044,Lighting,Cookware,62.0,63.0,62.0,55.1,69.2,5412.28,488.84,335561.36,HistGradientBoostingRegressor
+2025-12-29,1,SKU045,Product 045,Storage,Lamp,164.8,162.0,164.8,157.9,172.0,7676.78,3634.56,1265133.34,HistGradientBoostingRegressor
+2025-12-29,1,SKU046,Product 046,Furniture,Shelf,58.6,56.0,58.6,51.7,65.8,7175.54,1913.03,420486.64,HistGradientBoostingRegressor
+2025-12-29,1,SKU047,Product 047,Home Decor,Cabinet,108.4,114.0,108.4,101.5,115.6,7938.22,3416.1,860503.05,HistGradientBoostingRegressor
+2025-12-29,1,SKU048,Product 048,Kitchen,Rug,52.0,52.0,52.0,45.1,59.2,1379.55,6863.87,71736.6,HistGradientBoostingRegressor
+2025-12-29,1,SKU049,Product 049,Lighting,Organizer,177.8,198.0,177.8,170.9,185.0,5223.37,2063.03,928715.19,HistGradientBoostingRegressor
+2025-12-29,1,SKU050,Product 050,Storage,Sofa,40.8,47.0,40.8,33.9,48.0,882.72,701.85,36014.98,HistGradientBoostingRegressor
+2026-01-05,2,SKU001,Product 001,Furniture,Chair,92.6,100.0,92.6,85.7,99.8,3664.05,1758.45,339291.03,HistGradientBoostingRegressor
+2026-01-05,2,SKU002,Product 002,Home Decor,Table,58.6,63.0,58.6,51.7,65.8,3805.69,3867.09,223013.43,HistGradientBoostingRegressor
+2026-01-05,2,SKU003,Product 003,Kitchen,Cushion,33.2,34.0,33.2,26.3,40.4,8078.23,589.48,268197.24,HistGradientBoostingRegressor
+2026-01-05,2,SKU004,Product 004,Lighting,Cookware,34.5,35.0,34.5,27.6,41.7,6861.57,1445.74,236724.16,HistGradientBoostingRegressor
+2026-01-05,2,SKU005,Product 005,Storage,Lamp,114.5,97.0,114.5,107.6,121.7,9493.22,5543.63,1086973.69,HistGradientBoostingRegressor
+2026-01-05,2,SKU006,Product 006,Furniture,Shelf,44.3,50.0,44.3,37.4,51.5,8106.04,6021.91,359097.57,HistGradientBoostingRegressor
+2026-01-05,2,SKU007,Product 007,Home Decor,Cabinet,164.5,171.0,164.5,157.6,171.7,5114.09,7748.2,841267.81,HistGradientBoostingRegressor
+2026-01-05,2,SKU008,Product 008,Kitchen,Rug,118.0,105.0,118.0,111.1,125.2,9842.64,2775.15,1161431.52,HistGradientBoostingRegressor
+2026-01-05,2,SKU009,Product 009,Lighting,Organizer,80.5,55.0,80.5,73.6,87.7,2336.89,3121.06,188119.64,HistGradientBoostingRegressor
+2026-01-05,2,SKU010,Product 010,Storage,Sofa,117.9,118.0,117.9,111.0,125.1,663.46,3889.06,78221.93,HistGradientBoostingRegressor
+2026-01-05,2,SKU011,Product 011,Furniture,Chair,19.7,21.0,19.7,12.8,26.9,1444.56,1718.4,28457.83,HistGradientBoostingRegressor
+2026-01-05,2,SKU012,Product 012,Home Decor,Table,173.7,180.0,173.7,166.8,180.9,8779.37,1256.89,1524976.57,HistGradientBoostingRegressor
+2026-01-05,2,SKU013,Product 013,Kitchen,Cushion,91.7,93.0,91.7,84.8,98.9,5757.78,3936.71,527988.43,HistGradientBoostingRegressor
+2026-01-05,2,SKU014,Product 014,Lighting,Cookware,137.2,131.0,137.2,130.3,144.4,2270.75,2008.55,311546.9,HistGradientBoostingRegressor
+2026-01-05,2,SKU015,Product 015,Storage,Lamp,26.2,25.0,26.2,19.3,33.4,6212.12,5441.06,162757.54,HistGradientBoostingRegressor
+2026-01-05,2,SKU016,Product 016,Furniture,Shelf,87.9,97.0,87.9,81.0,95.1,2166.82,3637.93,190463.48,HistGradientBoostingRegressor
+2026-01-05,2,SKU017,Product 017,Home Decor,Cabinet,98.5,97.0,98.5,91.6,105.7,8477.32,6703.26,835016.02,HistGradientBoostingRegressor
+2026-01-05,2,SKU018,Product 018,Kitchen,Rug,176.2,172.0,176.2,169.3,183.4,5575.41,5677.05,982387.24,HistGradientBoostingRegressor
+2026-01-05,2,SKU019,Product 019,Lighting,Organizer,115.2,114.0,115.2,108.3,122.4,4819.85,2670.84,555246.72,HistGradientBoostingRegressor
+2026-01-05,2,SKU020,Product 020,Storage,Sofa,92.6,83.0,92.6,85.7,99.8,3897.54,6700.01,360912.2,HistGradientBoostingRegressor
+2026-01-05,2,SKU021,Product 021,Furniture,Chair,55.7,63.0,55.7,48.8,62.9,7711.28,6486.92,429518.3,HistGradientBoostingRegressor
+2026-01-05,2,SKU022,Product 022,Home Decor,Table,77.3,77.0,77.3,70.4,84.5,4597.03,3252.96,355350.42,HistGradientBoostingRegressor
+2026-01-05,2,SKU023,Product 023,Kitchen,Cushion,109.7,114.0,109.7,102.8,116.9,1416.74,2484.54,155416.38,HistGradientBoostingRegressor
+2026-01-05,2,SKU024,Product 024,Lighting,Cookware,84.8,77.0,84.8,77.9,92.0,1768.87,5539.34,150000.18,HistGradientBoostingRegressor
+2026-01-05,2,SKU025,Product 025,Storage,Lamp,19.5,21.0,19.5,12.6,26.7,11558.01,1333.08,225381.2,HistGradientBoostingRegressor
+2026-01-05,2,SKU026,Product 026,Furniture,Shelf,149.5,165.0,149.5,142.6,156.7,10939.54,1799.29,1635461.23,HistGradientBoostingRegressor
+2026-01-05,2,SKU027,Product 027,Home Decor,Cabinet,167.2,167.0,167.2,160.3,174.4,8516.6,307.06,1423975.52,HistGradientBoostingRegressor
+2026-01-05,2,SKU028,Product 028,Kitchen,Rug,31.6,41.0,31.6,24.7,38.8,3484.09,6348.66,110097.24,HistGradientBoostingRegressor
+2026-01-05,2,SKU029,Product 029,Lighting,Organizer,111.7,110.0,111.7,104.8,118.9,11642.45,5402.59,1300461.67,HistGradientBoostingRegressor
+2026-01-05,2,SKU030,Product 030,Storage,Sofa,32.3,31.0,32.3,25.4,39.5,9433.51,5715.03,304702.37,HistGradientBoostingRegressor
+2026-01-05,2,SKU031,Product 031,Furniture,Chair,130.5,145.0,130.5,123.6,137.7,8715.93,6300.65,1137428.86,HistGradientBoostingRegressor
+2026-01-05,2,SKU032,Product 032,Home Decor,Table,59.0,54.0,59.0,52.1,66.2,5612.59,3806.6,331142.81,HistGradientBoostingRegressor
+2026-01-05,2,SKU033,Product 033,Kitchen,Cushion,119.0,123.0,119.0,112.1,126.2,3558.0,4657.74,423402.0,HistGradientBoostingRegressor
+2026-01-05,2,SKU034,Product 034,Lighting,Cookware,138.0,128.0,138.0,131.1,145.2,1518.14,1333.43,209503.32,HistGradientBoostingRegressor
+2026-01-05,2,SKU035,Product 035,Storage,Lamp,147.4,149.0,147.4,140.5,154.6,10870.19,1137.61,1602266.01,HistGradientBoostingRegressor
+2026-01-05,2,SKU036,Product 036,Furniture,Shelf,32.4,32.0,32.4,25.5,39.6,5687.0,5430.12,184258.8,HistGradientBoostingRegressor
+2026-01-05,2,SKU037,Product 037,Home Decor,Cabinet,162.5,156.0,162.5,155.6,169.7,2747.42,3901.0,446455.75,HistGradientBoostingRegressor
+2026-01-05,2,SKU038,Product 038,Kitchen,Rug,51.1,48.0,51.1,44.2,58.3,3949.1,4630.58,201799.01,HistGradientBoostingRegressor
+2026-01-05,2,SKU039,Product 039,Lighting,Organizer,20.0,25.0,20.0,13.1,27.2,7118.95,6178.74,142379.0,HistGradientBoostingRegressor
+2026-01-05,2,SKU040,Product 040,Storage,Sofa,100.6,115.0,100.6,93.7,107.8,2450.56,5169.07,246526.34,HistGradientBoostingRegressor
+2026-01-05,2,SKU041,Product 041,Furniture,Chair,77.3,98.0,77.3,70.4,84.5,10336.73,4540.24,799029.23,HistGradientBoostingRegressor
+2026-01-05,2,SKU042,Product 042,Home Decor,Table,145.3,137.0,145.3,138.4,152.5,9198.83,4583.86,1336590.0,HistGradientBoostingRegressor
+2026-01-05,2,SKU043,Product 043,Kitchen,Cushion,160.4,166.0,160.4,153.5,167.6,8745.77,2605.61,1402821.51,HistGradientBoostingRegressor
+2026-01-05,2,SKU044,Product 044,Lighting,Cookware,71.6,76.0,71.6,64.7,78.8,5412.28,488.84,387519.25,HistGradientBoostingRegressor
+2026-01-05,2,SKU045,Product 045,Storage,Lamp,168.3,169.0,168.3,161.4,175.5,7676.78,3634.56,1292002.07,HistGradientBoostingRegressor
+2026-01-05,2,SKU046,Product 046,Furniture,Shelf,68.4,72.0,68.4,61.5,75.6,7175.54,1913.03,490806.94,HistGradientBoostingRegressor
+2026-01-05,2,SKU047,Product 047,Home Decor,Cabinet,104.5,110.0,104.5,97.6,111.7,7938.22,3416.1,829543.99,HistGradientBoostingRegressor
+2026-01-05,2,SKU048,Product 048,Kitchen,Rug,54.5,57.0,54.5,47.6,61.7,1379.55,6863.87,75185.47,HistGradientBoostingRegressor
+2026-01-05,2,SKU049,Product 049,Lighting,Organizer,179.7,177.0,179.7,172.8,186.9,5223.37,2063.03,938639.59,HistGradientBoostingRegressor
+2026-01-05,2,SKU050,Product 050,Storage,Sofa,38.4,40.0,38.4,31.5,45.6,882.72,701.85,33896.45,HistGradientBoostingRegressor
+2026-01-12,3,SKU001,Product 001,Furniture,Chair,92.2,89.0,92.2,85.3,99.4,3664.05,1758.45,337825.41,HistGradientBoostingRegressor
+2026-01-12,3,SKU002,Product 002,Home Decor,Table,65.4,67.0,65.4,58.5,72.6,3805.69,3867.09,248892.13,HistGradientBoostingRegressor
+2026-01-12,3,SKU003,Product 003,Kitchen,Cushion,34.3,41.0,34.3,27.4,41.5,8078.23,589.48,277083.29,HistGradientBoostingRegressor
+2026-01-12,3,SKU004,Product 004,Lighting,Cookware,33.4,24.0,33.4,26.5,40.6,6861.57,1445.74,229176.44,HistGradientBoostingRegressor
+2026-01-12,3,SKU005,Product 005,Storage,Lamp,118.2,133.0,118.2,111.3,125.4,9493.22,5543.63,1122098.6,HistGradientBoostingRegressor
+2026-01-12,3,SKU006,Product 006,Furniture,Shelf,46.8,46.0,46.8,39.9,54.0,8106.04,6021.91,379362.67,HistGradientBoostingRegressor
+2026-01-12,3,SKU007,Product 007,Home Decor,Cabinet,163.2,156.0,163.2,156.3,170.4,5114.09,7748.2,834619.49,HistGradientBoostingRegressor
+2026-01-12,3,SKU008,Product 008,Kitchen,Rug,113.0,111.0,113.0,106.1,120.2,9842.64,2775.15,1112218.32,HistGradientBoostingRegressor
+2026-01-12,3,SKU009,Product 009,Lighting,Organizer,81.3,70.0,81.3,74.4,88.5,2336.89,3121.06,189989.16,HistGradientBoostingRegressor
+2026-01-12,3,SKU010,Product 010,Storage,Sofa,111.9,113.0,111.9,105.0,119.1,663.46,3889.06,74241.17,HistGradientBoostingRegressor
+2026-01-12,3,SKU011,Product 011,Furniture,Chair,21.2,19.0,21.2,14.3,28.4,1444.56,1718.4,30624.67,HistGradientBoostingRegressor
+2026-01-12,3,SKU012,Product 012,Home Decor,Table,179.5,194.0,179.5,172.6,186.7,8779.37,1256.89,1575896.92,HistGradientBoostingRegressor
+2026-01-12,3,SKU013,Product 013,Kitchen,Cushion,91.0,98.0,91.0,84.1,98.2,5757.78,3936.71,523957.98,HistGradientBoostingRegressor
+2026-01-12,3,SKU014,Product 014,Lighting,Cookware,138.7,144.0,138.7,131.8,145.9,2270.75,2008.55,314953.02,HistGradientBoostingRegressor
+2026-01-12,3,SKU015,Product 015,Storage,Lamp,24.6,27.0,24.6,17.7,31.8,6212.12,5441.06,152818.15,HistGradientBoostingRegressor
+2026-01-12,3,SKU016,Product 016,Furniture,Shelf,86.2,76.0,86.2,79.3,93.4,2166.82,3637.93,186779.88,HistGradientBoostingRegressor
+2026-01-12,3,SKU017,Product 017,Home Decor,Cabinet,99.8,106.0,99.8,92.9,107.0,8477.32,6703.26,846036.54,HistGradientBoostingRegressor
+2026-01-12,3,SKU018,Product 018,Kitchen,Rug,174.1,164.0,174.1,167.2,181.3,5575.41,5677.05,970678.88,HistGradientBoostingRegressor
+2026-01-12,3,SKU019,Product 019,Lighting,Organizer,116.8,113.0,116.8,109.9,124.0,4819.85,2670.84,562958.48,HistGradientBoostingRegressor
+2026-01-12,3,SKU020,Product 020,Storage,Sofa,93.3,95.0,93.3,86.4,100.5,3897.54,6700.01,363640.48,HistGradientBoostingRegressor
+2026-01-12,3,SKU021,Product 021,Furniture,Chair,53.1,60.0,53.1,46.2,60.3,7711.28,6486.92,409468.97,HistGradientBoostingRegressor
+2026-01-12,3,SKU022,Product 022,Home Decor,Table,74.1,69.0,74.1,67.2,81.3,4597.03,3252.96,340639.92,HistGradientBoostingRegressor
+2026-01-12,3,SKU023,Product 023,Kitchen,Cushion,102.4,92.0,102.4,95.5,109.6,1416.74,2484.54,145074.18,HistGradientBoostingRegressor
+2026-01-12,3,SKU024,Product 024,Lighting,Cookware,84.5,73.0,84.5,77.6,91.7,1768.87,5539.34,149469.51,HistGradientBoostingRegressor
+2026-01-12,3,SKU025,Product 025,Storage,Lamp,19.4,12.0,19.4,12.5,26.6,11558.01,1333.08,224225.39,HistGradientBoostingRegressor
+2026-01-12,3,SKU026,Product 026,Furniture,Shelf,160.6,136.0,160.6,153.7,167.8,10939.54,1799.29,1756890.12,HistGradientBoostingRegressor
+2026-01-12,3,SKU027,Product 027,Home Decor,Cabinet,175.2,190.0,175.2,168.3,182.4,8516.6,307.06,1492108.32,HistGradientBoostingRegressor
+2026-01-12,3,SKU028,Product 028,Kitchen,Rug,32.1,43.0,32.1,25.2,39.3,3484.09,6348.66,111839.29,HistGradientBoostingRegressor
+2026-01-12,3,SKU029,Product 029,Lighting,Organizer,112.7,124.0,112.7,105.8,119.9,11642.45,5402.59,1312104.12,HistGradientBoostingRegressor
+2026-01-12,3,SKU030,Product 030,Storage,Sofa,31.9,34.0,31.9,25.0,39.1,9433.51,5715.03,300928.97,HistGradientBoostingRegressor
+2026-01-12,3,SKU031,Product 031,Furniture,Chair,135.6,132.0,135.6,128.7,142.8,8715.93,6300.65,1181880.11,HistGradientBoostingRegressor
+2026-01-12,3,SKU032,Product 032,Home Decor,Table,66.5,67.0,66.5,59.6,73.7,5612.59,3806.6,373237.23,HistGradientBoostingRegressor
+2026-01-12,3,SKU033,Product 033,Kitchen,Cushion,122.6,138.0,122.6,115.7,129.8,3558.0,4657.74,436210.8,HistGradientBoostingRegressor
+2026-01-12,3,SKU034,Product 034,Lighting,Cookware,137.2,134.0,137.2,130.3,144.4,1518.14,1333.43,208288.81,HistGradientBoostingRegressor
+2026-01-12,3,SKU035,Product 035,Storage,Lamp,145.7,122.0,145.7,138.8,152.9,10870.19,1137.61,1583786.68,HistGradientBoostingRegressor
+2026-01-12,3,SKU036,Product 036,Furniture,Shelf,32.6,36.0,32.6,25.7,39.8,5687.0,5430.12,185396.2,HistGradientBoostingRegressor
+2026-01-12,3,SKU037,Product 037,Home Decor,Cabinet,160.1,158.0,160.1,153.2,167.3,2747.42,3901.0,439861.94,HistGradientBoostingRegressor
+2026-01-12,3,SKU038,Product 038,Kitchen,Rug,50.8,48.0,50.8,43.9,58.0,3949.1,4630.58,200614.28,HistGradientBoostingRegressor
+2026-01-12,3,SKU039,Product 039,Lighting,Organizer,21.5,25.0,21.5,14.6,28.7,7118.95,6178.74,153057.42,HistGradientBoostingRegressor
+2026-01-12,3,SKU040,Product 040,Storage,Sofa,98.6,112.0,98.6,91.7,105.8,2450.56,5169.07,241625.22,HistGradientBoostingRegressor
+2026-01-12,3,SKU041,Product 041,Furniture,Chair,74.8,74.0,74.8,67.9,82.0,10336.73,4540.24,773187.4,HistGradientBoostingRegressor
+2026-01-12,3,SKU042,Product 042,Home Decor,Table,158.8,155.0,158.8,151.9,166.0,9198.83,4583.86,1460774.2,HistGradientBoostingRegressor
+2026-01-12,3,SKU043,Product 043,Kitchen,Cushion,149.6,157.0,149.6,142.7,156.8,8745.77,2605.61,1308367.19,HistGradientBoostingRegressor
+2026-01-12,3,SKU044,Product 044,Lighting,Cookware,72.7,81.0,72.7,65.8,79.9,5412.28,488.84,393472.76,HistGradientBoostingRegressor
+2026-01-12,3,SKU045,Product 045,Storage,Lamp,158.3,145.0,158.3,151.4,165.5,7676.78,3634.56,1215234.27,HistGradientBoostingRegressor
+2026-01-12,3,SKU046,Product 046,Furniture,Shelf,64.7,66.0,64.7,57.8,71.9,7175.54,1913.03,464257.44,HistGradientBoostingRegressor
+2026-01-12,3,SKU047,Product 047,Home Decor,Cabinet,99.8,84.0,99.8,92.9,107.0,7938.22,3416.1,792234.36,HistGradientBoostingRegressor
+2026-01-12,3,SKU048,Product 048,Kitchen,Rug,54.9,61.0,54.9,48.0,62.1,1379.55,6863.87,75737.29,HistGradientBoostingRegressor
+2026-01-12,3,SKU049,Product 049,Lighting,Organizer,174.1,183.0,174.1,167.2,181.3,5223.37,2063.03,909388.72,HistGradientBoostingRegressor
+2026-01-12,3,SKU050,Product 050,Storage,Sofa,42.2,40.0,42.2,35.3,49.4,882.72,701.85,37250.78,HistGradientBoostingRegressor
+2026-01-19,4,SKU001,Product 001,Furniture,Chair,92.8,103.0,92.8,85.9,100.0,3664.05,1758.45,340023.84,HistGradientBoostingRegressor
+2026-01-19,4,SKU002,Product 002,Home Decor,Table,65.5,66.0,65.5,58.6,72.7,3805.69,3867.09,249272.7,HistGradientBoostingRegressor
+2026-01-19,4,SKU003,Product 003,Kitchen,Cushion,37.1,23.0,37.1,30.2,44.3,8078.23,589.48,299702.33,HistGradientBoostingRegressor
+2026-01-19,4,SKU004,Product 004,Lighting,Cookware,34.7,38.0,34.7,27.8,41.9,6861.57,1445.74,238096.48,HistGradientBoostingRegressor
+2026-01-19,4,SKU005,Product 005,Storage,Lamp,109.4,110.0,109.4,102.5,116.6,9493.22,5543.63,1038558.27,HistGradientBoostingRegressor
+2026-01-19,4,SKU006,Product 006,Furniture,Shelf,47.1,51.0,47.1,40.2,54.3,8106.04,6021.91,381794.48,HistGradientBoostingRegressor
+2026-01-19,4,SKU007,Product 007,Home Decor,Cabinet,177.1,179.0,177.1,170.2,184.3,5114.09,7748.2,905705.34,HistGradientBoostingRegressor
+2026-01-19,4,SKU008,Product 008,Kitchen,Rug,112.7,106.0,112.7,105.8,119.9,9842.64,2775.15,1109265.53,HistGradientBoostingRegressor
+2026-01-19,4,SKU009,Product 009,Lighting,Organizer,81.8,71.0,81.8,74.9,89.0,2336.89,3121.06,191157.6,HistGradientBoostingRegressor
+2026-01-19,4,SKU010,Product 010,Storage,Sofa,110.6,118.0,110.6,103.7,117.8,663.46,3889.06,73378.68,HistGradientBoostingRegressor
+2026-01-19,4,SKU011,Product 011,Furniture,Chair,22.0,24.0,22.0,15.1,29.2,1444.56,1718.4,31780.32,HistGradientBoostingRegressor
+2026-01-19,4,SKU012,Product 012,Home Decor,Table,181.3,191.0,181.3,174.4,188.5,8779.37,1256.89,1591699.78,HistGradientBoostingRegressor
+2026-01-19,4,SKU013,Product 013,Kitchen,Cushion,92.1,87.0,92.1,85.2,99.3,5757.78,3936.71,530291.54,HistGradientBoostingRegressor
+2026-01-19,4,SKU014,Product 014,Lighting,Cookware,158.7,181.0,158.7,151.8,165.9,2270.75,2008.55,360368.02,HistGradientBoostingRegressor
+2026-01-19,4,SKU015,Product 015,Storage,Lamp,26.5,32.0,26.5,19.6,33.7,6212.12,5441.06,164621.18,HistGradientBoostingRegressor
+2026-01-19,4,SKU016,Product 016,Furniture,Shelf,95.6,100.0,95.6,88.7,102.8,2166.82,3637.93,207147.99,HistGradientBoostingRegressor
+2026-01-19,4,SKU017,Product 017,Home Decor,Cabinet,103.7,89.0,103.7,96.8,110.9,8477.32,6703.26,879098.08,HistGradientBoostingRegressor
+2026-01-19,4,SKU018,Product 018,Kitchen,Rug,173.3,163.0,173.3,166.4,180.5,5575.41,5677.05,966218.55,HistGradientBoostingRegressor
+2026-01-19,4,SKU019,Product 019,Lighting,Organizer,110.1,115.0,110.1,103.2,117.3,4819.85,2670.84,530665.48,HistGradientBoostingRegressor
+2026-01-19,4,SKU020,Product 020,Storage,Sofa,95.3,100.0,95.3,88.4,102.5,3897.54,6700.01,371435.56,HistGradientBoostingRegressor
+2026-01-19,4,SKU021,Product 021,Furniture,Chair,53.0,57.0,53.0,46.1,60.2,7711.28,6486.92,408697.84,HistGradientBoostingRegressor
+2026-01-19,4,SKU022,Product 022,Home Decor,Table,79.4,79.0,79.4,72.5,86.6,4597.03,3252.96,365004.18,HistGradientBoostingRegressor
+2026-01-19,4,SKU023,Product 023,Kitchen,Cushion,102.9,83.0,102.9,96.0,110.1,1416.74,2484.54,145782.55,HistGradientBoostingRegressor
+2026-01-19,4,SKU024,Product 024,Lighting,Cookware,83.6,80.0,83.6,76.7,90.8,1768.87,5539.34,147877.53,HistGradientBoostingRegressor
+2026-01-19,4,SKU025,Product 025,Storage,Lamp,22.2,21.0,22.2,15.3,29.4,11558.01,1333.08,256587.82,HistGradientBoostingRegressor
+2026-01-19,4,SKU026,Product 026,Furniture,Shelf,153.5,165.0,153.5,146.6,160.7,10939.54,1799.29,1679219.39,HistGradientBoostingRegressor
+2026-01-19,4,SKU027,Product 027,Home Decor,Cabinet,180.0,179.0,180.0,173.1,187.2,8516.6,307.06,1532988.0,HistGradientBoostingRegressor
+2026-01-19,4,SKU028,Product 028,Kitchen,Rug,34.2,42.0,34.2,27.3,41.4,3484.09,6348.66,119155.88,HistGradientBoostingRegressor
+2026-01-19,4,SKU029,Product 029,Lighting,Organizer,110.2,91.0,110.2,103.3,117.4,11642.45,5402.59,1282997.99,HistGradientBoostingRegressor
+2026-01-19,4,SKU030,Product 030,Storage,Sofa,34.0,36.0,34.0,27.1,41.2,9433.51,5715.03,320739.34,HistGradientBoostingRegressor
+2026-01-19,4,SKU031,Product 031,Furniture,Chair,133.0,140.0,133.0,126.1,140.2,8715.93,6300.65,1159218.69,HistGradientBoostingRegressor
+2026-01-19,4,SKU032,Product 032,Home Decor,Table,65.4,64.0,65.4,58.5,72.6,5612.59,3806.6,367063.39,HistGradientBoostingRegressor
+2026-01-19,4,SKU033,Product 033,Kitchen,Cushion,117.7,129.0,117.7,110.8,124.9,3558.0,4657.74,418776.6,HistGradientBoostingRegressor
+2026-01-19,4,SKU034,Product 034,Lighting,Cookware,141.8,148.0,141.8,134.9,149.0,1518.14,1333.43,215272.25,HistGradientBoostingRegressor
+2026-01-19,4,SKU035,Product 035,Storage,Lamp,150.3,148.0,150.3,143.4,157.5,10870.19,1137.61,1633789.56,HistGradientBoostingRegressor
+2026-01-19,4,SKU036,Product 036,Furniture,Shelf,34.0,38.0,34.0,27.1,41.2,5687.0,5430.12,193358.0,HistGradientBoostingRegressor
+2026-01-19,4,SKU037,Product 037,Home Decor,Cabinet,171.9,163.0,171.9,165.0,179.1,2747.42,3901.0,472281.5,HistGradientBoostingRegressor
+2026-01-19,4,SKU038,Product 038,Kitchen,Rug,52.5,42.0,52.5,45.6,59.7,3949.1,4630.58,207327.75,HistGradientBoostingRegressor
+2026-01-19,4,SKU039,Product 039,Lighting,Organizer,22.1,24.0,22.1,15.2,29.3,7118.95,6178.74,157328.8,HistGradientBoostingRegressor
+2026-01-19,4,SKU040,Product 040,Storage,Sofa,94.3,101.0,94.3,87.4,101.5,2450.56,5169.07,231087.81,HistGradientBoostingRegressor
+2026-01-19,4,SKU041,Product 041,Furniture,Chair,77.6,72.0,77.6,70.7,84.8,10336.73,4540.24,802130.25,HistGradientBoostingRegressor
+2026-01-19,4,SKU042,Product 042,Home Decor,Table,160.5,149.0,160.5,153.6,167.7,9198.83,4583.86,1476412.22,HistGradientBoostingRegressor
+2026-01-19,4,SKU043,Product 043,Kitchen,Cushion,157.3,155.0,157.3,150.4,164.5,8745.77,2605.61,1375709.62,HistGradientBoostingRegressor
+2026-01-19,4,SKU044,Product 044,Lighting,Cookware,71.8,71.0,71.8,64.9,79.0,5412.28,488.84,388601.7,HistGradientBoostingRegressor
+2026-01-19,4,SKU045,Product 045,Storage,Lamp,178.2,184.0,178.2,171.3,185.4,7676.78,3634.56,1368002.2,HistGradientBoostingRegressor
+2026-01-19,4,SKU046,Product 046,Furniture,Shelf,63.9,60.0,63.9,57.0,71.1,7175.54,1913.03,458517.01,HistGradientBoostingRegressor
+2026-01-19,4,SKU047,Product 047,Home Decor,Cabinet,103.3,90.0,103.3,96.4,110.5,7938.22,3416.1,820018.13,HistGradientBoostingRegressor
+2026-01-19,4,SKU048,Product 048,Kitchen,Rug,55.7,71.0,55.7,48.8,62.9,1379.55,6863.87,76840.93,HistGradientBoostingRegressor
+2026-01-19,4,SKU049,Product 049,Lighting,Organizer,175.9,154.0,175.9,169.0,183.1,5223.37,2063.03,918790.78,HistGradientBoostingRegressor
+2026-01-19,4,SKU050,Product 050,Storage,Sofa,43.0,45.0,43.0,36.1,50.2,882.72,701.85,37956.96,HistGradientBoostingRegressor
+2026-01-26,5,SKU001,Product 001,Furniture,Chair,97.1,100.0,97.1,90.2,104.3,3664.05,1758.45,355779.26,HistGradientBoostingRegressor
+2026-01-26,5,SKU002,Product 002,Home Decor,Table,73.5,85.0,73.5,66.6,80.7,3805.69,3867.09,279718.22,HistGradientBoostingRegressor
+2026-01-26,5,SKU003,Product 003,Kitchen,Cushion,38.8,40.0,38.8,31.9,46.0,8078.23,589.48,313435.32,HistGradientBoostingRegressor
+2026-01-26,5,SKU004,Product 004,Lighting,Cookware,37.1,34.0,37.1,30.2,44.3,6861.57,1445.74,254564.25,HistGradientBoostingRegressor
+2026-01-26,5,SKU005,Product 005,Storage,Lamp,110.9,107.0,110.9,104.0,118.1,9493.22,5543.63,1052798.1,HistGradientBoostingRegressor
+2026-01-26,5,SKU006,Product 006,Furniture,Shelf,45.1,47.0,45.1,38.2,52.3,8106.04,6021.91,365582.4,HistGradientBoostingRegressor
+2026-01-26,5,SKU007,Product 007,Home Decor,Cabinet,183.9,178.0,183.9,177.0,191.1,5114.09,7748.2,940481.15,HistGradientBoostingRegressor
+2026-01-26,5,SKU008,Product 008,Kitchen,Rug,107.7,121.0,107.7,100.8,114.9,9842.64,2775.15,1060052.33,HistGradientBoostingRegressor
+2026-01-26,5,SKU009,Product 009,Lighting,Organizer,80.1,69.0,80.1,73.2,87.3,2336.89,3121.06,187184.89,HistGradientBoostingRegressor
+2026-01-26,5,SKU010,Product 010,Storage,Sofa,109.9,97.0,109.9,103.0,117.1,663.46,3889.06,72914.25,HistGradientBoostingRegressor
+2026-01-26,5,SKU011,Product 011,Furniture,Chair,22.0,13.0,22.0,15.1,29.2,1444.56,1718.4,31780.32,HistGradientBoostingRegressor
+2026-01-26,5,SKU012,Product 012,Home Decor,Table,186.8,172.0,186.8,179.9,194.0,8779.37,1256.89,1639986.32,HistGradientBoostingRegressor
+2026-01-26,5,SKU013,Product 013,Kitchen,Cushion,94.6,91.0,94.6,87.7,101.8,5757.78,3936.71,544685.99,HistGradientBoostingRegressor
+2026-01-26,5,SKU014,Product 014,Lighting,Cookware,145.4,126.0,145.4,138.5,152.6,2270.75,2008.55,330167.05,HistGradientBoostingRegressor
+2026-01-26,5,SKU015,Product 015,Storage,Lamp,25.3,29.0,25.3,18.4,32.5,6212.12,5441.06,157166.64,HistGradientBoostingRegressor
+2026-01-26,5,SKU016,Product 016,Furniture,Shelf,94.3,95.0,94.3,87.4,101.5,2166.82,3637.93,204331.13,HistGradientBoostingRegressor
+2026-01-26,5,SKU017,Product 017,Home Decor,Cabinet,102.4,89.0,102.4,95.5,109.6,8477.32,6703.26,868077.57,HistGradientBoostingRegressor
+2026-01-26,5,SKU018,Product 018,Kitchen,Rug,179.0,178.0,179.0,172.1,186.2,5575.41,5677.05,997998.39,HistGradientBoostingRegressor
+2026-01-26,5,SKU019,Product 019,Lighting,Organizer,108.4,109.0,108.4,101.5,115.6,4819.85,2670.84,522471.74,HistGradientBoostingRegressor
+2026-01-26,5,SKU020,Product 020,Storage,Sofa,95.4,79.0,95.4,88.5,102.6,3897.54,6700.01,371825.32,HistGradientBoostingRegressor
+2026-01-26,5,SKU021,Product 021,Furniture,Chair,61.3,73.0,61.3,54.4,68.5,7711.28,6486.92,472701.46,HistGradientBoostingRegressor
+2026-01-26,5,SKU022,Product 022,Home Decor,Table,79.0,75.0,79.0,72.1,86.2,4597.03,3252.96,363165.37,HistGradientBoostingRegressor
+2026-01-26,5,SKU023,Product 023,Kitchen,Cushion,108.6,106.0,108.6,101.7,115.8,1416.74,2484.54,153857.96,HistGradientBoostingRegressor
+2026-01-26,5,SKU024,Product 024,Lighting,Cookware,85.3,88.0,85.3,78.4,92.5,1768.87,5539.34,150884.61,HistGradientBoostingRegressor
+2026-01-26,5,SKU025,Product 025,Storage,Lamp,21.3,17.0,21.3,14.4,28.5,11558.01,1333.08,246185.61,HistGradientBoostingRegressor
+2026-01-26,5,SKU026,Product 026,Furniture,Shelf,173.7,161.0,173.7,166.8,180.9,10939.54,1799.29,1900198.1,HistGradientBoostingRegressor
+2026-01-26,5,SKU027,Product 027,Home Decor,Cabinet,177.1,160.0,177.1,170.2,184.3,8516.6,307.06,1508289.86,HistGradientBoostingRegressor
+2026-01-26,5,SKU028,Product 028,Kitchen,Rug,36.7,38.0,36.7,29.8,43.9,3484.09,6348.66,127866.1,HistGradientBoostingRegressor
+2026-01-26,5,SKU029,Product 029,Lighting,Organizer,108.2,111.0,108.2,101.3,115.4,11642.45,5402.59,1259713.09,HistGradientBoostingRegressor
+2026-01-26,5,SKU030,Product 030,Storage,Sofa,33.8,26.0,33.8,26.9,41.0,9433.51,5715.03,318852.64,HistGradientBoostingRegressor
+2026-01-26,5,SKU031,Product 031,Furniture,Chair,133.6,131.0,133.6,126.7,140.8,8715.93,6300.65,1164448.25,HistGradientBoostingRegressor
+2026-01-26,5,SKU032,Product 032,Home Decor,Table,64.2,63.0,64.2,57.3,71.4,5612.59,3806.6,360328.28,HistGradientBoostingRegressor
+2026-01-26,5,SKU033,Product 033,Kitchen,Cushion,127.1,139.0,127.1,120.2,134.3,3558.0,4657.74,452221.8,HistGradientBoostingRegressor
+2026-01-26,5,SKU034,Product 034,Lighting,Cookware,142.4,142.0,142.4,135.5,149.6,1518.14,1333.43,216183.14,HistGradientBoostingRegressor
+2026-01-26,5,SKU035,Product 035,Storage,Lamp,153.0,140.0,153.0,146.1,160.2,10870.19,1137.61,1663139.07,HistGradientBoostingRegressor
+2026-01-26,5,SKU036,Product 036,Furniture,Shelf,35.8,39.0,35.8,28.9,43.0,5687.0,5430.12,203594.6,HistGradientBoostingRegressor
+2026-01-26,5,SKU037,Product 037,Home Decor,Cabinet,169.5,167.0,169.5,162.6,176.7,2747.42,3901.0,465687.69,HistGradientBoostingRegressor
+2026-01-26,5,SKU038,Product 038,Kitchen,Rug,52.9,46.0,52.9,46.0,60.1,3949.1,4630.58,208907.39,HistGradientBoostingRegressor
+2026-01-26,5,SKU039,Product 039,Lighting,Organizer,22.0,25.0,22.0,15.1,29.2,7118.95,6178.74,156616.9,HistGradientBoostingRegressor
+2026-01-26,5,SKU040,Product 040,Storage,Sofa,106.2,110.0,106.2,99.3,113.4,2450.56,5169.07,260249.47,HistGradientBoostingRegressor
+2026-01-26,5,SKU041,Product 041,Furniture,Chair,81.2,80.0,81.2,74.3,88.4,10336.73,4540.24,839342.48,HistGradientBoostingRegressor
+2026-01-26,5,SKU042,Product 042,Home Decor,Table,171.6,162.0,171.6,164.7,178.8,9198.83,4583.86,1578519.23,HistGradientBoostingRegressor
+2026-01-26,5,SKU043,Product 043,Kitchen,Cushion,164.0,161.0,164.0,157.1,171.2,8745.77,2605.61,1434306.28,HistGradientBoostingRegressor
+2026-01-26,5,SKU044,Product 044,Lighting,Cookware,67.8,67.0,67.8,60.9,75.0,5412.28,488.84,366952.58,HistGradientBoostingRegressor
+2026-01-26,5,SKU045,Product 045,Storage,Lamp,174.0,184.0,174.0,167.1,181.2,7676.78,3634.56,1335759.72,HistGradientBoostingRegressor
+2026-01-26,5,SKU046,Product 046,Furniture,Shelf,66.3,66.0,66.3,59.4,73.5,7175.54,1913.03,475738.3,HistGradientBoostingRegressor
+2026-01-26,5,SKU047,Product 047,Home Decor,Cabinet,107.4,99.0,107.4,100.5,114.6,7938.22,3416.1,852564.83,HistGradientBoostingRegressor
+2026-01-26,5,SKU048,Product 048,Kitchen,Rug,55.3,63.0,55.3,48.4,62.5,1379.55,6863.87,76289.11,HistGradientBoostingRegressor
+2026-01-26,5,SKU049,Product 049,Lighting,Organizer,173.6,160.0,173.6,166.7,180.8,5223.37,2063.03,906777.03,HistGradientBoostingRegressor
+2026-01-26,5,SKU050,Product 050,Storage,Sofa,43.2,36.0,43.2,36.3,50.4,882.72,701.85,38133.5,HistGradientBoostingRegressor
+2026-02-02,6,SKU001,Product 001,Furniture,Chair,99.8,106.0,99.8,92.9,107.0,3664.05,1758.45,365672.19,HistGradientBoostingRegressor
+2026-02-02,6,SKU002,Product 002,Home Decor,Table,72.0,71.0,72.0,65.1,79.2,3805.69,3867.09,274009.68,HistGradientBoostingRegressor
+2026-02-02,6,SKU003,Product 003,Kitchen,Cushion,36.4,34.0,36.4,29.5,43.6,8078.23,589.48,294047.57,HistGradientBoostingRegressor
+2026-02-02,6,SKU004,Product 004,Lighting,Cookware,38.0,32.0,38.0,31.1,45.2,6861.57,1445.74,260739.66,HistGradientBoostingRegressor
+2026-02-02,6,SKU005,Product 005,Storage,Lamp,113.6,123.0,113.6,106.7,120.8,9493.22,5543.63,1078429.79,HistGradientBoostingRegressor
+2026-02-02,6,SKU006,Product 006,Furniture,Shelf,48.2,46.0,48.2,41.3,55.4,8106.04,6021.91,390711.13,HistGradientBoostingRegressor
+2026-02-02,6,SKU007,Product 007,Home Decor,Cabinet,175.5,179.0,175.5,168.6,182.7,5114.09,7748.2,897522.8,HistGradientBoostingRegressor
+2026-02-02,6,SKU008,Product 008,Kitchen,Rug,120.0,134.0,120.0,113.1,127.2,9842.64,2775.15,1181116.8,HistGradientBoostingRegressor
+2026-02-02,6,SKU009,Product 009,Lighting,Organizer,85.6,86.0,85.6,78.7,92.8,2336.89,3121.06,200037.78,HistGradientBoostingRegressor
+2026-02-02,6,SKU010,Product 010,Storage,Sofa,115.5,124.0,115.5,108.6,122.7,663.46,3889.06,76629.63,HistGradientBoostingRegressor
+2026-02-02,6,SKU011,Product 011,Furniture,Chair,21.6,16.0,21.6,14.7,28.8,1444.56,1718.4,31202.5,HistGradientBoostingRegressor
+2026-02-02,6,SKU012,Product 012,Home Decor,Table,197.6,195.0,197.6,190.7,204.8,8779.37,1256.89,1734803.51,HistGradientBoostingRegressor
+2026-02-02,6,SKU013,Product 013,Kitchen,Cushion,98.2,97.0,98.2,91.3,105.4,5757.78,3936.71,565414.0,HistGradientBoostingRegressor
+2026-02-02,6,SKU014,Product 014,Lighting,Cookware,164.8,167.0,164.8,157.9,172.0,2270.75,2008.55,374219.6,HistGradientBoostingRegressor
+2026-02-02,6,SKU015,Product 015,Storage,Lamp,27.4,31.0,27.4,20.5,34.6,6212.12,5441.06,170212.09,HistGradientBoostingRegressor
+2026-02-02,6,SKU016,Product 016,Furniture,Shelf,106.0,112.0,106.0,99.1,113.2,2166.82,3637.93,229682.92,HistGradientBoostingRegressor
+2026-02-02,6,SKU017,Product 017,Home Decor,Cabinet,103.7,112.0,103.7,96.8,110.9,8477.32,6703.26,879098.08,HistGradientBoostingRegressor
+2026-02-02,6,SKU018,Product 018,Kitchen,Rug,181.2,175.0,181.2,174.3,188.4,5575.41,5677.05,1010264.29,HistGradientBoostingRegressor
+2026-02-02,6,SKU019,Product 019,Lighting,Organizer,109.1,95.0,109.1,102.2,116.3,4819.85,2670.84,525845.64,HistGradientBoostingRegressor
+2026-02-02,6,SKU020,Product 020,Storage,Sofa,97.4,93.0,97.4,90.5,104.6,3897.54,6700.01,379620.4,HistGradientBoostingRegressor
+2026-02-02,6,SKU021,Product 021,Furniture,Chair,55.0,63.0,55.0,48.1,62.2,7711.28,6486.92,424120.4,HistGradientBoostingRegressor
+2026-02-02,6,SKU022,Product 022,Home Decor,Table,78.8,75.0,78.8,71.9,86.0,4597.03,3252.96,362245.96,HistGradientBoostingRegressor
+2026-02-02,6,SKU023,Product 023,Kitchen,Cushion,111.8,98.0,111.8,104.9,119.0,1416.74,2484.54,158391.53,HistGradientBoostingRegressor
+2026-02-02,6,SKU024,Product 024,Lighting,Cookware,86.9,84.0,86.9,80.0,94.1,1768.87,5539.34,153714.8,HistGradientBoostingRegressor
+2026-02-02,6,SKU025,Product 025,Storage,Lamp,21.4,28.0,21.4,14.5,28.6,11558.01,1333.08,247341.41,HistGradientBoostingRegressor
+2026-02-02,6,SKU026,Product 026,Furniture,Shelf,168.6,170.0,168.6,161.7,175.8,10939.54,1799.29,1844406.44,HistGradientBoostingRegressor
+2026-02-02,6,SKU027,Product 027,Home Decor,Cabinet,198.2,197.0,198.2,191.3,205.4,8516.6,307.06,1687990.12,HistGradientBoostingRegressor
+2026-02-02,6,SKU028,Product 028,Kitchen,Rug,36.6,44.0,36.6,29.7,43.8,3484.09,6348.66,127517.69,HistGradientBoostingRegressor
+2026-02-02,6,SKU029,Product 029,Lighting,Organizer,114.3,105.0,114.3,107.4,121.5,11642.45,5402.59,1330732.04,HistGradientBoostingRegressor
+2026-02-02,6,SKU030,Product 030,Storage,Sofa,37.4,41.0,37.4,30.5,44.6,9433.51,5715.03,352813.27,HistGradientBoostingRegressor
+2026-02-02,6,SKU031,Product 031,Furniture,Chair,145.5,152.0,145.5,138.6,152.7,8715.93,6300.65,1268167.81,HistGradientBoostingRegressor
+2026-02-02,6,SKU032,Product 032,Home Decor,Table,71.3,74.0,71.3,64.4,78.5,5612.59,3806.6,400177.67,HistGradientBoostingRegressor
+2026-02-02,6,SKU033,Product 033,Kitchen,Cushion,138.2,146.0,138.2,131.3,145.4,3558.0,4657.74,491715.6,HistGradientBoostingRegressor
+2026-02-02,6,SKU034,Product 034,Lighting,Cookware,146.8,145.0,146.8,139.9,154.0,1518.14,1333.43,222862.95,HistGradientBoostingRegressor
+2026-02-02,6,SKU035,Product 035,Storage,Lamp,172.7,179.0,172.7,165.8,179.9,10870.19,1137.61,1877281.81,HistGradientBoostingRegressor
+2026-02-02,6,SKU036,Product 036,Furniture,Shelf,35.7,39.0,35.7,28.8,42.9,5687.0,5430.12,203025.9,HistGradientBoostingRegressor
+2026-02-02,6,SKU037,Product 037,Home Decor,Cabinet,178.3,181.0,178.3,171.4,185.5,2747.42,3901.0,489864.99,HistGradientBoostingRegressor
+2026-02-02,6,SKU038,Product 038,Kitchen,Rug,54.3,47.0,54.3,47.4,61.5,3949.1,4630.58,214436.13,HistGradientBoostingRegressor
+2026-02-02,6,SKU039,Product 039,Lighting,Organizer,23.3,26.0,23.3,16.4,30.5,7118.95,6178.74,165871.54,HistGradientBoostingRegressor
+2026-02-02,6,SKU040,Product 040,Storage,Sofa,105.3,102.0,105.3,98.4,112.5,2450.56,5169.07,258043.97,HistGradientBoostingRegressor
+2026-02-02,6,SKU041,Product 041,Furniture,Chair,78.9,77.0,78.9,72.0,86.1,10336.73,4540.24,815568.0,HistGradientBoostingRegressor
+2026-02-02,6,SKU042,Product 042,Home Decor,Table,156.9,151.0,156.9,150.0,164.1,9198.83,4583.86,1443296.43,HistGradientBoostingRegressor
+2026-02-02,6,SKU043,Product 043,Kitchen,Cushion,183.7,191.0,183.7,176.8,190.9,8745.77,2605.61,1606597.95,HistGradientBoostingRegressor
+2026-02-02,6,SKU044,Product 044,Lighting,Cookware,70.8,69.0,70.8,63.9,78.0,5412.28,488.84,383189.42,HistGradientBoostingRegressor
+2026-02-02,6,SKU045,Product 045,Storage,Lamp,179.6,179.0,179.6,172.7,186.8,7676.78,3634.56,1378749.69,HistGradientBoostingRegressor
+2026-02-02,6,SKU046,Product 046,Furniture,Shelf,75.4,76.0,75.4,68.5,82.6,7175.54,1913.03,541035.72,HistGradientBoostingRegressor
+2026-02-02,6,SKU047,Product 047,Home Decor,Cabinet,112.3,108.0,112.3,105.4,119.5,7938.22,3416.1,891462.11,HistGradientBoostingRegressor
+2026-02-02,6,SKU048,Product 048,Kitchen,Rug,55.9,53.0,55.9,49.0,63.1,1379.55,6863.87,77116.85,HistGradientBoostingRegressor
+2026-02-02,6,SKU049,Product 049,Lighting,Organizer,193.2,199.0,193.2,186.3,200.4,5223.37,2063.03,1009155.08,HistGradientBoostingRegressor
+2026-02-02,6,SKU050,Product 050,Storage,Sofa,41.7,41.0,41.7,34.8,48.9,882.72,701.85,36809.42,HistGradientBoostingRegressor
+2026-02-09,7,SKU001,Product 001,Furniture,Chair,105.2,124.0,105.2,98.3,112.4,3664.05,1758.45,385458.06,HistGradientBoostingRegressor
+2026-02-09,7,SKU002,Product 002,Home Decor,Table,70.9,79.0,70.9,64.0,78.1,3805.69,3867.09,269823.42,HistGradientBoostingRegressor
+2026-02-09,7,SKU003,Product 003,Kitchen,Cushion,38.9,47.0,38.9,32.0,46.1,8078.23,589.48,314243.15,HistGradientBoostingRegressor
+2026-02-09,7,SKU004,Product 004,Lighting,Cookware,36.5,37.0,36.5,29.6,43.7,6861.57,1445.74,250447.3,HistGradientBoostingRegressor
+2026-02-09,7,SKU005,Product 005,Storage,Lamp,122.7,132.0,122.7,115.8,129.9,9493.22,5543.63,1164818.09,HistGradientBoostingRegressor
+2026-02-09,7,SKU006,Product 006,Furniture,Shelf,51.0,45.0,51.0,44.1,58.2,8106.04,6021.91,413408.04,HistGradientBoostingRegressor
+2026-02-09,7,SKU007,Product 007,Home Decor,Cabinet,184.7,171.0,184.7,177.8,191.9,5114.09,7748.2,944572.42,HistGradientBoostingRegressor
+2026-02-09,7,SKU008,Product 008,Kitchen,Rug,116.9,122.0,116.9,110.0,124.1,9842.64,2775.15,1150604.62,HistGradientBoostingRegressor
+2026-02-09,7,SKU009,Product 009,Lighting,Organizer,80.4,74.0,80.4,73.5,87.6,2336.89,3121.06,187885.96,HistGradientBoostingRegressor
+2026-02-09,7,SKU010,Product 010,Storage,Sofa,113.4,128.0,113.4,106.5,120.6,663.46,3889.06,75236.36,HistGradientBoostingRegressor
+2026-02-09,7,SKU011,Product 011,Furniture,Chair,20.7,16.0,20.7,13.8,27.9,1444.56,1718.4,29902.39,HistGradientBoostingRegressor
+2026-02-09,7,SKU012,Product 012,Home Decor,Table,202.8,203.0,202.8,195.9,210.0,8779.37,1256.89,1780456.24,HistGradientBoostingRegressor
+2026-02-09,7,SKU013,Product 013,Kitchen,Cushion,102.2,97.0,102.2,95.3,109.4,5757.78,3936.71,588445.12,HistGradientBoostingRegressor
+2026-02-09,7,SKU014,Product 014,Lighting,Cookware,162.4,188.0,162.4,155.5,169.6,2270.75,2008.55,368769.8,HistGradientBoostingRegressor
+2026-02-09,7,SKU015,Product 015,Storage,Lamp,27.5,37.0,27.5,20.6,34.7,6212.12,5441.06,170833.3,HistGradientBoostingRegressor
+2026-02-09,7,SKU016,Product 016,Furniture,Shelf,99.2,93.0,99.2,92.3,106.4,2166.82,3637.93,214948.54,HistGradientBoostingRegressor
+2026-02-09,7,SKU017,Product 017,Home Decor,Cabinet,102.8,97.0,102.8,95.9,110.0,8477.32,6703.26,871468.5,HistGradientBoostingRegressor
+2026-02-09,7,SKU018,Product 018,Kitchen,Rug,196.3,186.0,196.3,189.4,203.5,5575.41,5677.05,1094452.98,HistGradientBoostingRegressor
+2026-02-09,7,SKU019,Product 019,Lighting,Organizer,114.9,111.0,114.9,108.0,122.1,4819.85,2670.84,553800.77,HistGradientBoostingRegressor
+2026-02-09,7,SKU020,Product 020,Storage,Sofa,101.1,105.0,101.1,94.2,108.3,3897.54,6700.01,394041.29,HistGradientBoostingRegressor
+2026-02-09,7,SKU021,Product 021,Furniture,Chair,61.8,73.0,61.8,54.9,69.0,7711.28,6486.92,476557.1,HistGradientBoostingRegressor
+2026-02-09,7,SKU022,Product 022,Home Decor,Table,81.4,86.0,81.4,74.5,88.6,4597.03,3252.96,374198.24,HistGradientBoostingRegressor
+2026-02-09,7,SKU023,Product 023,Kitchen,Cushion,114.5,113.0,114.5,107.6,121.7,1416.74,2484.54,162216.73,HistGradientBoostingRegressor
+2026-02-09,7,SKU024,Product 024,Lighting,Cookware,87.0,95.0,87.0,80.1,94.2,1768.87,5539.34,153891.69,HistGradientBoostingRegressor
+2026-02-09,7,SKU025,Product 025,Storage,Lamp,21.6,16.0,21.6,14.7,28.8,11558.01,1333.08,249653.02,HistGradientBoostingRegressor
+2026-02-09,7,SKU026,Product 026,Furniture,Shelf,170.1,166.0,170.1,163.2,177.3,10939.54,1799.29,1860815.75,HistGradientBoostingRegressor
+2026-02-09,7,SKU027,Product 027,Home Decor,Cabinet,199.6,187.0,199.6,192.7,206.8,8516.6,307.06,1699913.36,HistGradientBoostingRegressor
+2026-02-09,7,SKU028,Product 028,Kitchen,Rug,35.8,37.0,35.8,28.9,43.0,3484.09,6348.66,124730.42,HistGradientBoostingRegressor
+2026-02-09,7,SKU029,Product 029,Lighting,Organizer,115.5,127.0,115.5,108.6,122.7,11642.45,5402.59,1344702.98,HistGradientBoostingRegressor
+2026-02-09,7,SKU030,Product 030,Storage,Sofa,34.8,31.0,34.8,27.9,42.0,9433.51,5715.03,328286.15,HistGradientBoostingRegressor
+2026-02-09,7,SKU031,Product 031,Furniture,Chair,153.5,163.0,153.5,146.6,160.7,8715.93,6300.65,1337895.26,HistGradientBoostingRegressor
+2026-02-09,7,SKU032,Product 032,Home Decor,Table,66.9,63.0,66.9,60.0,74.1,5612.59,3806.6,375482.27,HistGradientBoostingRegressor
+2026-02-09,7,SKU033,Product 033,Kitchen,Cushion,140.1,127.0,140.1,133.2,147.3,3558.0,4657.74,498475.8,HistGradientBoostingRegressor
+2026-02-09,7,SKU034,Product 034,Lighting,Cookware,161.5,160.0,161.5,154.6,168.7,1518.14,1333.43,245179.61,HistGradientBoostingRegressor
+2026-02-09,7,SKU035,Product 035,Storage,Lamp,171.3,184.0,171.3,164.4,178.5,10870.19,1137.61,1862063.55,HistGradientBoostingRegressor
+2026-02-09,7,SKU036,Product 036,Furniture,Shelf,35.7,30.0,35.7,28.8,42.9,5687.0,5430.12,203025.9,HistGradientBoostingRegressor
+2026-02-09,7,SKU037,Product 037,Home Decor,Cabinet,172.5,165.0,172.5,165.6,179.7,2747.42,3901.0,473929.95,HistGradientBoostingRegressor
+2026-02-09,7,SKU038,Product 038,Kitchen,Rug,54.3,55.0,54.3,47.4,61.5,3949.1,4630.58,214436.13,HistGradientBoostingRegressor
+2026-02-09,7,SKU039,Product 039,Lighting,Organizer,22.2,29.0,22.2,15.3,29.4,7118.95,6178.74,158040.69,HistGradientBoostingRegressor
+2026-02-09,7,SKU040,Product 040,Storage,Sofa,111.1,125.0,111.1,104.2,118.3,2450.56,5169.07,272257.22,HistGradientBoostingRegressor
+2026-02-09,7,SKU041,Product 041,Furniture,Chair,79.3,76.0,79.3,72.4,86.5,10336.73,4540.24,819702.69,HistGradientBoostingRegressor
+2026-02-09,7,SKU042,Product 042,Home Decor,Table,182.5,179.0,182.5,175.6,189.7,9198.83,4583.86,1678786.48,HistGradientBoostingRegressor
+2026-02-09,7,SKU043,Product 043,Kitchen,Cushion,160.6,168.0,160.6,153.7,167.8,8745.77,2605.61,1404570.66,HistGradientBoostingRegressor
+2026-02-09,7,SKU044,Product 044,Lighting,Cookware,66.3,66.0,66.3,59.4,73.5,5412.28,488.84,358834.16,HistGradientBoostingRegressor
+2026-02-09,7,SKU045,Product 045,Storage,Lamp,172.3,202.0,172.3,165.4,179.5,7676.78,3634.56,1322709.19,HistGradientBoostingRegressor
+2026-02-09,7,SKU046,Product 046,Furniture,Shelf,66.4,64.0,66.4,59.5,73.6,7175.54,1913.03,476455.86,HistGradientBoostingRegressor
+2026-02-09,7,SKU047,Product 047,Home Decor,Cabinet,114.2,104.0,114.2,107.3,121.4,7938.22,3416.1,906544.72,HistGradientBoostingRegressor
+2026-02-09,7,SKU048,Product 048,Kitchen,Rug,57.4,44.0,57.4,50.5,64.6,1379.55,6863.87,79186.17,HistGradientBoostingRegressor
+2026-02-09,7,SKU049,Product 049,Lighting,Organizer,183.8,182.0,183.8,176.9,191.0,5223.37,2063.03,960055.41,HistGradientBoostingRegressor
+2026-02-09,7,SKU050,Product 050,Storage,Sofa,44.1,51.0,44.1,37.2,51.3,882.72,701.85,38927.95,HistGradientBoostingRegressor
+2026-02-16,8,SKU001,Product 001,Furniture,Chair,107.7,116.0,107.7,100.8,114.9,3664.05,1758.45,394618.19,HistGradientBoostingRegressor
+2026-02-16,8,SKU002,Product 002,Home Decor,Table,73.3,82.0,73.3,66.4,80.5,3805.69,3867.09,278957.08,HistGradientBoostingRegressor
+2026-02-16,8,SKU003,Product 003,Kitchen,Cushion,38.2,45.0,38.2,31.3,45.4,8078.23,589.48,308588.39,HistGradientBoostingRegressor
+2026-02-16,8,SKU004,Product 004,Lighting,Cookware,36.3,33.0,36.3,29.4,43.5,6861.57,1445.74,249074.99,HistGradientBoostingRegressor
+2026-02-16,8,SKU005,Product 005,Storage,Lamp,123.5,139.0,123.5,116.6,130.7,9493.22,5543.63,1172412.67,HistGradientBoostingRegressor
+2026-02-16,8,SKU006,Product 006,Furniture,Shelf,49.1,51.0,49.1,42.2,56.3,8106.04,6021.91,398006.56,HistGradientBoostingRegressor
+2026-02-16,8,SKU007,Product 007,Home Decor,Cabinet,185.1,171.0,185.1,178.2,192.3,5114.09,7748.2,946618.06,HistGradientBoostingRegressor
+2026-02-16,8,SKU008,Product 008,Kitchen,Rug,116.4,112.0,116.4,109.5,123.6,9842.64,2775.15,1145683.3,HistGradientBoostingRegressor
+2026-02-16,8,SKU009,Product 009,Lighting,Organizer,83.9,75.0,83.9,77.0,91.1,2336.89,3121.06,196065.07,HistGradientBoostingRegressor
+2026-02-16,8,SKU010,Product 010,Storage,Sofa,111.8,128.0,111.8,104.9,119.0,663.46,3889.06,74174.83,HistGradientBoostingRegressor
+2026-02-16,8,SKU011,Product 011,Furniture,Chair,20.0,23.0,20.0,13.1,27.2,1444.56,1718.4,28891.2,HistGradientBoostingRegressor
+2026-02-16,8,SKU012,Product 012,Home Decor,Table,205.4,214.0,205.4,198.5,212.6,8779.37,1256.89,1803282.6,HistGradientBoostingRegressor
+2026-02-16,8,SKU013,Product 013,Kitchen,Cushion,105.3,100.0,105.3,98.4,112.5,5757.78,3936.71,606294.23,HistGradientBoostingRegressor
+2026-02-16,8,SKU014,Product 014,Lighting,Cookware,156.3,155.0,156.3,149.4,163.5,2270.75,2008.55,354918.23,HistGradientBoostingRegressor
+2026-02-16,8,SKU015,Product 015,Storage,Lamp,31.5,30.0,31.5,24.6,38.7,6212.12,5441.06,195681.78,HistGradientBoostingRegressor
+2026-02-16,8,SKU016,Product 016,Furniture,Shelf,106.5,97.0,106.5,99.6,113.7,2166.82,3637.93,230766.33,HistGradientBoostingRegressor
+2026-02-16,8,SKU017,Product 017,Home Decor,Cabinet,110.5,107.0,110.5,103.6,117.7,8477.32,6703.26,936743.86,HistGradientBoostingRegressor
+2026-02-16,8,SKU018,Product 018,Kitchen,Rug,201.3,194.0,201.3,194.4,208.5,5575.41,5677.05,1122330.03,HistGradientBoostingRegressor
+2026-02-16,8,SKU019,Product 019,Lighting,Organizer,119.9,132.0,119.9,113.0,127.1,4819.85,2670.84,577900.02,HistGradientBoostingRegressor
+2026-02-16,8,SKU020,Product 020,Storage,Sofa,102.6,97.0,102.6,95.7,109.8,3897.54,6700.01,399887.6,HistGradientBoostingRegressor
+2026-02-16,8,SKU021,Product 021,Furniture,Chair,56.6,63.0,56.6,49.7,63.8,7711.28,6486.92,436458.45,HistGradientBoostingRegressor
+2026-02-16,8,SKU022,Product 022,Home Decor,Table,85.6,88.0,85.6,78.7,92.8,4597.03,3252.96,393505.77,HistGradientBoostingRegressor
+2026-02-16,8,SKU023,Product 023,Kitchen,Cushion,113.4,115.0,113.4,106.5,120.6,1416.74,2484.54,160658.32,HistGradientBoostingRegressor
+2026-02-16,8,SKU024,Product 024,Lighting,Cookware,86.6,91.0,86.6,79.7,93.8,1768.87,5539.34,153184.14,HistGradientBoostingRegressor
+2026-02-16,8,SKU025,Product 025,Storage,Lamp,21.6,17.0,21.6,14.7,28.8,11558.01,1333.08,249653.02,HistGradientBoostingRegressor
+2026-02-16,8,SKU026,Product 026,Furniture,Shelf,178.8,177.0,178.8,171.9,186.0,10939.54,1799.29,1955989.75,HistGradientBoostingRegressor
+2026-02-16,8,SKU027,Product 027,Home Decor,Cabinet,177.0,156.0,177.0,170.1,184.2,8516.6,307.06,1507438.2,HistGradientBoostingRegressor
+2026-02-16,8,SKU028,Product 028,Kitchen,Rug,36.2,32.0,36.2,29.3,43.4,3484.09,6348.66,126124.06,HistGradientBoostingRegressor
+2026-02-16,8,SKU029,Product 029,Lighting,Organizer,110.6,118.0,110.6,103.7,117.8,11642.45,5402.59,1287654.97,HistGradientBoostingRegressor
+2026-02-16,8,SKU030,Product 030,Storage,Sofa,37.0,39.0,37.0,30.1,44.2,9433.51,5715.03,349039.87,HistGradientBoostingRegressor
+2026-02-16,8,SKU031,Product 031,Furniture,Chair,140.8,130.0,140.8,133.9,148.0,8715.93,6300.65,1227202.94,HistGradientBoostingRegressor
+2026-02-16,8,SKU032,Product 032,Home Decor,Table,72.7,80.0,72.7,65.8,79.9,5612.59,3806.6,408035.29,HistGradientBoostingRegressor
+2026-02-16,8,SKU033,Product 033,Kitchen,Cushion,135.6,129.0,135.6,128.7,142.8,3558.0,4657.74,482464.8,HistGradientBoostingRegressor
+2026-02-16,8,SKU034,Product 034,Lighting,Cookware,157.1,163.0,157.1,150.2,164.3,1518.14,1333.43,238499.79,HistGradientBoostingRegressor
+2026-02-16,8,SKU035,Product 035,Storage,Lamp,165.3,165.0,165.3,158.4,172.5,10870.19,1137.61,1796842.41,HistGradientBoostingRegressor
+2026-02-16,8,SKU036,Product 036,Furniture,Shelf,35.7,40.0,35.7,28.8,42.9,5687.0,5430.12,203025.9,HistGradientBoostingRegressor
+2026-02-16,8,SKU037,Product 037,Home Decor,Cabinet,176.0,181.0,176.0,169.1,183.2,2747.42,3901.0,483545.92,HistGradientBoostingRegressor
+2026-02-16,8,SKU038,Product 038,Kitchen,Rug,56.8,61.0,56.8,49.9,64.0,3949.1,4630.58,224308.88,HistGradientBoostingRegressor
+2026-02-16,8,SKU039,Product 039,Lighting,Organizer,21.7,18.0,21.7,14.8,28.9,7118.95,6178.74,154481.21,HistGradientBoostingRegressor
+2026-02-16,8,SKU040,Product 040,Storage,Sofa,111.1,111.0,111.1,104.2,118.3,2450.56,5169.07,272257.22,HistGradientBoostingRegressor
+2026-02-16,8,SKU041,Product 041,Furniture,Chair,89.8,96.0,89.8,82.9,97.0,10336.73,4540.24,928238.35,HistGradientBoostingRegressor
+2026-02-16,8,SKU042,Product 042,Home Decor,Table,167.6,165.0,167.6,160.7,174.8,9198.83,4583.86,1541723.91,HistGradientBoostingRegressor
+2026-02-16,8,SKU043,Product 043,Kitchen,Cushion,155.7,153.0,155.7,148.8,162.9,8745.77,2605.61,1361716.39,HistGradientBoostingRegressor
+2026-02-16,8,SKU044,Product 044,Lighting,Cookware,68.4,67.0,68.4,61.5,75.6,5412.28,488.84,370199.95,HistGradientBoostingRegressor
+2026-02-16,8,SKU045,Product 045,Storage,Lamp,191.8,202.0,191.8,184.9,199.0,7676.78,3634.56,1472406.4,HistGradientBoostingRegressor
+2026-02-16,8,SKU046,Product 046,Furniture,Shelf,74.3,70.0,74.3,67.4,81.5,7175.54,1913.03,533142.62,HistGradientBoostingRegressor
+2026-02-16,8,SKU047,Product 047,Home Decor,Cabinet,114.2,105.0,114.2,107.3,121.4,7938.22,3416.1,906544.72,HistGradientBoostingRegressor
+2026-02-16,8,SKU048,Product 048,Kitchen,Rug,54.7,59.0,54.7,47.8,61.9,1379.55,6863.87,75461.38,HistGradientBoostingRegressor
+2026-02-16,8,SKU049,Product 049,Lighting,Organizer,192.0,184.0,192.0,185.1,199.2,5223.37,2063.03,1002887.04,HistGradientBoostingRegressor
+2026-02-16,8,SKU050,Product 050,Storage,Sofa,46.3,44.0,46.3,39.4,53.5,882.72,701.85,40869.94,HistGradientBoostingRegressor
